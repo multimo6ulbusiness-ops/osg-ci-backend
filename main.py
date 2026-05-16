@@ -220,6 +220,179 @@ def get_compare():
         },
     }
 
+
+# ── Layer 2 Data ───────────────────────────────────────────────────────────────
+
+LAYER2_SUBSYSTEMS = [
+    {"id": "I",    "name": "Distributed Kubernetes Fabric",       "purpose": "Runtime orchestration"},
+    {"id": "II",   "name": "Service Mesh Runtime",                "purpose": "Secure service communication"},
+    {"id": "III",  "name": "Persistent Storage Fabric",           "purpose": "Durable intelligence state"},
+    {"id": "IV",   "name": "Ingress & Traffic Fabric",            "purpose": "Runtime routing"},
+    {"id": "V",    "name": "Distributed Event Fabric",            "purpose": "Intelligence propagation"},
+    {"id": "VI",   "name": "Federation Runtime",                  "purpose": "Multi-node synchronization"},
+    {"id": "VII",  "name": "Runtime Scaling Engine",              "purpose": "Adaptive elasticity"},
+    {"id": "VIII", "name": "Synchronization Infrastructure",      "purpose": "Recursive intelligence consistency"},
+    {"id": "IX",   "name": "Sovereign Networking Layer",          "purpose": "Operational isolation"},
+    {"id": "X",    "name": "Infrastructure Observability",        "purpose": "Runtime visibility"},
+    {"id": "XI",   "name": "Chaos & Survivability Engineering",   "purpose": "Enterprise resilience"},
+]
+
+LAYER2_KUBERNETES = [
+    {"num": 1, "name": "Governance Cluster",    "handles": ["policy enforcement", "identity", "constitutional runtime", "survivability controls"]},
+    {"num": 2, "name": "Intelligence Cluster",  "handles": ["invoice intelligence", "procurement intelligence", "anomaly detection", "AI inference"]},
+    {"num": 3, "name": "Forecasting Cluster",   "handles": ["ACIFR", "economic forecasting", "commodity prediction", "causal inference"]},
+    {"num": 4, "name": "Federation Cluster",    "handles": ["regional synchronization", "distributed intelligence replication", "node coordination"]},
+]
+
+LAYER2_SERVICE_MESH = [
+    {"function": "Service Mesh",      "technology": "Istio"},
+    {"function": "Runtime Encryption","technology": "mTLS"},
+    {"function": "Traffic Control",   "technology": "Envoy"},
+    {"function": "Service Identity",  "technology": "SPIFFE/SPIRE"},
+]
+
+LAYER2_STORAGE = [
+    {"type": "Relational",        "technology": "PostgreSQL",   "purpose": "Governance, security, and audit schemas"},
+    {"type": "Time-Series",       "technology": "TimescaleDB",  "purpose": "Temporal intelligence patterns and forecasting data"},
+    {"type": "Cache",             "technology": "Redis",        "purpose": "Process registry, session tokens, operational state"},
+    {"type": "Analytics",         "technology": "ClickHouse",   "purpose": "Immutable audit chain analytics, policy evaluation logs"},
+    {"type": "Graph Intelligence","technology": "Neo4j",        "purpose": "Causal correlation, entity relationships, intelligence graphs"},
+    {"type": "Vector Memory",     "technology": "Qdrant",       "purpose": "AI embedding storage, semantic search, intelligence retrieval"},
+    {"type": "Object Storage",    "technology": "MinIO",        "purpose": "Invoices, audit archives, forecasting models, simulation outputs"},
+]
+
+LAYER2_EVENT_TOPICS = [
+    "invoice.parsed", "vendor.anomaly", "forecast.generated", "institutional.shift",
+    "commodity.volatility", "logistics.delay", "recursive.sync", "policy.violation",
+]
+
+LAYER2_EVENT_STACK = [
+    {"function": "Event Streaming", "technology": "Redpanda"},
+    {"function": "Messaging",       "technology": "NATS"},
+    {"function": "Workflow Runtime","technology": "Temporal"},
+    {"function": "Event Replay",    "technology": "Kafka-compatible retention"},
+]
+
+LAYER2_FEDERATION_NODES = ["Regional Node A", "Regional Node B", "Regional Node C"]
+
+LAYER2_SCALING_STACK = [
+    {"function": "Autoscaling",    "technology": "KEDA"},
+    {"function": "Cluster Scaling","technology": "Cluster Autoscaler"},
+    {"function": "Load Metrics",   "technology": "Prometheus"},
+    {"function": "Event Scaling",  "technology": "Kafka lag metrics"},
+]
+
+LAYER2_NETWORK_SEGMENTS = [
+    {"segment": "Governance Network",    "purpose": "constitutional services"},
+    {"segment": "Intelligence Network",  "purpose": "AI runtime"},
+    {"segment": "Federation Network",    "purpose": "node synchronization"},
+    {"segment": "Observability Network", "purpose": "monitoring"},
+    {"segment": "Public Edge",           "purpose": "ingress only"},
+]
+
+LAYER2_OBSERVABILITY = [
+    {"component": "Prometheus",     "purpose": "metrics"},
+    {"component": "Grafana",        "purpose": "visualization"},
+    {"component": "Loki",           "purpose": "logs"},
+    {"component": "Jaeger",         "purpose": "tracing"},
+    {"component": "OpenTelemetry",  "purpose": "distributed telemetry"},
+]
+
+LAYER2_CHAOS_TESTS = [
+    "cluster failure", "broker failure", "node partition",
+    "service corruption", "storage loss", "federation isolation",
+]
+
+LAYER2_SYNC_LOGIC = ["Acquire Intelligence", "Normalize", "Correlate", "Forecast", "Synchronize", "Propagate", "Adapt"]
+
+LAYER2_FINAL_CAPABILITIES = [
+    "recursive synchronization", "distributed orchestration",
+    "multi-node intelligence federation", "enterprise-scale forecasting",
+    "sovereign runtime survivability", "adaptive operational scaling",
+]
+
+# ── Layer 2 Routes ─────────────────────────────────────────────────────────────
+
+@app.get("/api/layer2/overview")
+def get_layer2_overview():
+    return {
+        "layer": "Layer 2",
+        "name": "Infrastructure Runtime Fabric (IRF)",
+        "status": "INITIATING",
+        "subsystem_count": len(LAYER2_SUBSYSTEMS),
+        "builds_on": "Layer 1B — Constitutional Governance Kernel",
+        "subsystems": LAYER2_SUBSYSTEMS,
+    }
+
+@app.get("/api/layer2/kubernetes")
+def get_layer2_kubernetes():
+    return {"clusters": LAYER2_KUBERNETES, "count": len(LAYER2_KUBERNETES)}
+
+@app.get("/api/layer2/storage")
+def get_layer2_storage():
+    return {"engines": LAYER2_STORAGE, "count": len(LAYER2_STORAGE)}
+
+@app.get("/api/layer2/events")
+def get_layer2_events():
+    return {
+        "stack": LAYER2_EVENT_STACK,
+        "topics": LAYER2_EVENT_TOPICS,
+        "topology": ["Invoice Event", "Normalization Event", "Causal Correlation Event", "Forecast Event", "RISE Synchronization Event", "Operational Recommendation Event"],
+    }
+
+@app.get("/api/layer2/federation")
+def get_layer2_federation():
+    return {
+        "nodes": LAYER2_FEDERATION_NODES,
+        "model": "Each node: retains local sovereignty, synchronizes approved intelligence, obeys constitutional federation policy",
+    }
+
+@app.get("/api/layer2/scaling")
+def get_layer2_scaling():
+    return {"stack": LAYER2_SCALING_STACK, "conditions": ["event backlog", "synchronization pressure", "forecasting demand", "AI inference load", "anomaly density"]}
+
+@app.get("/api/layer2/networking")
+def get_layer2_networking():
+    return {"segments": LAYER2_NETWORK_SEGMENTS, "security": ["Zero Trust Networking", "Runtime Isolation", "Federation Encryption"]}
+
+@app.get("/api/layer2/observability")
+def get_layer2_observability():
+    return {"stack": LAYER2_OBSERVABILITY, "metrics": ["synchronization latency", "federation drift", "recursive propagation rate", "AI inference latency", "event throughput", "storage pressure", "runtime anomalies"]}
+
+@app.get("/api/layer2/chaos")
+def get_layer2_chaos():
+    return {"tests": LAYER2_CHAOS_TESTS, "target": ["continue operating", "synchronize safely", "preserve governance", "maintain survivability"]}
+
+@app.get("/api/layer2/sync")
+def get_layer2_sync():
+    return {"stack": [{"function": f, "technology": t} for f, t in [("Event Coordination","Redpanda"),("Workflow Orchestration","Temporal"),("State Synchronization","Redis"),("Graph Correlation","Neo4j")]], "logic": LAYER2_SYNC_LOGIC}
+
+@app.get("/api/layer2/service-mesh")
+def get_layer2_service_mesh():
+    return {"stack": LAYER2_SERVICE_MESH, "topology": ["Ingress Gateway", "Envoy Sidecars", "Service-to-Service mTLS", "Policy Enforcement"]}
+
+@app.get("/api/layer2/final-state")
+def get_layer2_final_state():
+    return {"capabilities": LAYER2_FINAL_CAPABILITIES, "description": "A distributed sovereign intelligence infrastructure fabric — the system transitions from governance infrastructure into a true enterprise intelligence nervous system."}
+
+@app.get("/api/layer2")
+def get_layer2_all():
+    return {
+        "overview": {"layer": "Layer 2", "name": "Infrastructure Runtime Fabric (IRF)", "status": "INITIATING", "subsystems": LAYER2_SUBSYSTEMS},
+        "kubernetes": {"clusters": LAYER2_KUBERNETES},
+        "service_mesh": {"stack": LAYER2_SERVICE_MESH},
+        "storage": {"engines": LAYER2_STORAGE},
+        "events": {"stack": LAYER2_EVENT_STACK, "topics": LAYER2_EVENT_TOPICS},
+        "federation": {"nodes": LAYER2_FEDERATION_NODES},
+        "scaling": {"stack": LAYER2_SCALING_STACK},
+        "networking": {"segments": LAYER2_NETWORK_SEGMENTS},
+        "observability": {"stack": LAYER2_OBSERVABILITY},
+        "chaos": {"tests": LAYER2_CHAOS_TESTS},
+        "sync": {"logic": LAYER2_SYNC_LOGIC},
+        "final_capabilities": LAYER2_FINAL_CAPABILITIES,
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
