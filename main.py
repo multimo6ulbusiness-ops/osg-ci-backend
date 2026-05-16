@@ -1352,6 +1352,213 @@ def get_layer4b_final_state():
     }
 
 
+# ── Layer 5 Data ───────────────────────────────────────────────────────────────
+
+LAYER5_OVERVIEW = {
+    "layer": "Layer 5",
+    "name": "Recursive Synchronization & Simulation — RISE Core Runtime",
+    "subtitle": "The Central Nervous System of OSG-CI™",
+    "status": "ACTIVE",
+    "badge": "RISE",
+    "color": "#06b6d4",
+    "purpose": "Construct recursive synchronization engines, simulation runtimes, adaptive propagation systems, operational digital twins, recursive reinforcement synchronization, strategic economic simulations, and full nervous-system orchestration.",
+    "final_state": "A FULLY SYNCHRONIZED RECURSIVE ENTERPRISE NERVOUS SYSTEM",
+}
+
+LAYER5_SYNC_STACK = [
+    {"function": "Event Streaming", "technology": "Redpanda"},
+    {"function": "Workflow Runtime", "technology": "Temporal"},
+    {"function": "Low-Latency Messaging", "technology": "NATS"},
+    {"function": "State Cache", "technology": "Redis"},
+    {"function": "Graph Correlation", "technology": "Neo4j"},
+]
+
+LAYER5_SYNC_OBJECTIVES = [
+    {"objective": "Event Consistency", "purpose": "Synchronization integrity"},
+    {"objective": "Temporal Ordering", "purpose": "Propagation correctness"},
+    {"objective": "Federation Stability", "purpose": "Distributed coherence"},
+    {"objective": "Recursive Boundaries", "purpose": "Survivability"},
+]
+
+LAYER5_SIM_STACK = [
+    {"function": "Simulation Runtime", "technology": "Python"},
+    {"function": "Distributed Execution", "technology": "Ray"},
+    {"function": "Workflow Orchestration", "technology": "Temporal"},
+    {"function": "Probabilistic Simulation", "technology": "PyMC"},
+    {"function": "Time-Series Forecasting", "technology": "Prophet"},
+]
+
+LAYER5_SIM_TYPES = [
+    {"type": "Procurement Simulation", "purpose": "Supply forecasting"},
+    {"type": "Logistics Simulation", "purpose": "Route survivability"},
+    {"type": "Economic Simulation", "purpose": "Inflation stress"},
+    {"type": "Federation Simulation", "purpose": "Distributed resilience"},
+    {"type": "Recursive Simulation", "purpose": "Propagation stability"},
+]
+
+LAYER5_PROP_TIERS = [
+    {"tier": "Tier 1", "purpose": "Critical disruptions"},
+    {"tier": "Tier 2", "purpose": "Economic instability"},
+    {"tier": "Tier 3", "purpose": "Procurement volatility"},
+    {"tier": "Tier 4", "purpose": "Informational telemetry"},
+]
+
+LAYER5_PROP_CONTROLS = [
+    {"constraint": "Recursive Depth Limits", "purpose": "Prevent runaway propagation"},
+    {"constraint": "Confidence Gates", "purpose": "Prevent low-confidence spread"},
+    {"constraint": "Federation Policies", "purpose": "Regional isolation"},
+    {"constraint": "Temporal TTL", "purpose": "Propagation expiration"},
+]
+
+LAYER5_TWIN_COMPONENTS = [
+    {"component": "Procurement Twin", "purpose": "Purchasing systems"},
+    {"component": "Logistics Twin", "purpose": "Distribution modeling"},
+    {"component": "Economic Twin", "purpose": "Macroeconomic simulation"},
+    {"component": "Federation Twin", "purpose": "Node coordination"},
+    {"component": "Vendor Twin", "purpose": "Supplier stability"},
+]
+
+LAYER5_RL_STACK = [
+    {"function": "RL Runtime", "technology": "Ray RLlib"},
+    {"function": "State Sync", "technology": "Redis"},
+    {"function": "Event Coordination", "technology": "Redpanda"},
+    {"function": "Distributed Training", "technology": "Ray"},
+]
+
+LAYER5_RL_OBJECTIVES = [
+    {"objective": "Forecast Optimization", "purpose": "Predictive improvement"},
+    {"objective": "Procurement Adaptation", "purpose": "Operational efficiency"},
+    {"objective": "Risk Reduction", "purpose": "Survivability"},
+    {"objective": "Recursive Stability", "purpose": "Bounded evolution"},
+]
+
+LAYER5_ECON_STACK = [
+    {"function": "Forecast Runtime", "technology": "Prophet"},
+    {"function": "Probabilistic Simulation", "technology": "PyMC"},
+    {"function": "Sequential Models", "technology": "LSTM"},
+    {"function": "Economic Correlation", "technology": "Neo4j"},
+    {"function": "Distributed Execution", "technology": "Ray"},
+]
+
+LAYER5_ECON_OUTPUTS = [
+    {"output": "Inflation Forecasts", "purpose": "Procurement adaptation"},
+    {"output": "Supply Stress Index", "purpose": "Operational planning"},
+    {"output": "Logistics Pressure Score", "purpose": "Route optimization"},
+    {"output": "Economic Risk Signal", "purpose": "Strategic mitigation"},
+]
+
+LAYER5_ORCH_STACK = [
+    {"function": "Workflow Runtime", "technology": "Temporal"},
+    {"function": "Event Coordination", "technology": "Redpanda"},
+    {"function": "State Synchronization", "technology": "Redis"},
+    {"function": "Federation Routing", "technology": "NATS"},
+    {"function": "Graph Correlation", "technology": "Neo4j"},
+]
+
+LAYER5_EVENT_TOPICS = [
+    {"topic": "recursive.sync", "producer": "RISE Sync Engine", "consumer": "All Federation Nodes"},
+    {"topic": "simulation.completed", "producer": "Ray Simulation Runtime", "consumer": "Synthesis / Forecast"},
+    {"topic": "economic.forecast.generated", "producer": "Economic Simulation Stack", "consumer": "RISE / Orchestration"},
+    {"topic": "digital.twin.updated", "producer": "Digital Twin Runtime", "consumer": "Simulation / RL Agent"},
+    {"topic": "propagation.priority.escalated", "producer": "Propagation Classifier", "consumer": "Federation Router / RISE"},
+    {"topic": "rl.policy.synchronized", "producer": "Ray RLlib Federated Agent", "consumer": "Procurement / Logistics"},
+    {"topic": "federation.sync.completed", "producer": "NATS Federation Router", "consumer": "Orchestration / Governance"},
+]
+
+LAYER5_OBS_METRICS = [
+    {"metric": "Synchronization Latency", "purpose": "Nervous-system coherence — target < 100ms"},
+    {"metric": "Federation Drift", "purpose": "Distributed integrity — target < 0.5% per hour"},
+    {"metric": "Simulation Throughput", "purpose": "Foresight scalability — target ≥ 500 sim/min"},
+    {"metric": "RL Synchronization Stability", "purpose": "Adaptive consistency — reward variance < 0.05"},
+    {"metric": "Propagation Amplification", "purpose": "Survivability visibility — factor < 1.5x"},
+    {"metric": "Recursive Depth", "purpose": "Containment integrity — max depth ≤ 8 hops"},
+]
+
+LAYER5_CHAOS_SCENARIOS = [
+    {"scenario": "Recursive Propagation Storm", "purpose": "Synchronization resilience"},
+    {"scenario": "Simulation Overload", "purpose": "Foresight survivability"},
+    {"scenario": "Federation Partition", "purpose": "Distributed continuity"},
+    {"scenario": "RL Divergence", "purpose": "Adaptive containment"},
+    {"scenario": "Economic Shock Cascade", "purpose": "Simulation stability"},
+    {"scenario": "Graph Propagation Corruption", "purpose": "Nervous-system resilience"},
+]
+
+LAYER5_VALIDATION_GATES = [
+    {"validation": "Recursive synchronization operational", "required": True},
+    {"validation": "Simulation runtimes validated", "required": True},
+    {"validation": "Adaptive propagation stable", "required": True},
+    {"validation": "Digital twins synchronized", "required": True},
+    {"validation": "RL synchronization operational", "required": True},
+    {"validation": "Economic simulations calibrated", "required": True},
+    {"validation": "Nervous-system orchestration stable", "required": True},
+    {"validation": "Recursive survivability validated", "required": True},
+    {"validation": "Chaos testing passed", "required": True},
+]
+
+# ── Layer 5 Endpoints ──────────────────────────────────────────────────────────
+
+@app.get("/api/layer5")
+def get_layer5():
+    return {
+        "overview": LAYER5_OVERVIEW,
+        "event_topics": LAYER5_EVENT_TOPICS,
+        "validation_gates": LAYER5_VALIDATION_GATES,
+    }
+
+@app.get("/api/layer5/overview")
+def get_layer5_overview():
+    return LAYER5_OVERVIEW
+
+@app.get("/api/layer5/sync")
+def get_layer5_sync():
+    return {"stack": LAYER5_SYNC_STACK, "objectives": LAYER5_SYNC_OBJECTIVES}
+
+@app.get("/api/layer5/simulation")
+def get_layer5_simulation():
+    return {"stack": LAYER5_SIM_STACK, "types": LAYER5_SIM_TYPES}
+
+@app.get("/api/layer5/propagation")
+def get_layer5_propagation():
+    return {"tiers": LAYER5_PROP_TIERS, "controls": LAYER5_PROP_CONTROLS}
+
+@app.get("/api/layer5/twins")
+def get_layer5_twins():
+    return {"components": LAYER5_TWIN_COMPONENTS}
+
+@app.get("/api/layer5/rl")
+def get_layer5_rl():
+    return {"stack": LAYER5_RL_STACK, "objectives": LAYER5_RL_OBJECTIVES}
+
+@app.get("/api/layer5/economic")
+def get_layer5_economic():
+    return {"stack": LAYER5_ECON_STACK, "outputs": LAYER5_ECON_OUTPUTS}
+
+@app.get("/api/layer5/orchestration")
+def get_layer5_orchestration():
+    return {"stack": LAYER5_ORCH_STACK}
+
+@app.get("/api/layer5/events")
+def get_layer5_events():
+    return {"topics": LAYER5_EVENT_TOPICS, "total": len(LAYER5_EVENT_TOPICS)}
+
+@app.get("/api/layer5/observability")
+def get_layer5_observability():
+    return {"metrics": LAYER5_OBS_METRICS}
+
+@app.get("/api/layer5/chaos")
+def get_layer5_chaos():
+    return {"scenarios": LAYER5_CHAOS_SCENARIOS, "total": len(LAYER5_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer5/final-state")
+def get_layer5_final_state():
+    return {
+        "gates": LAYER5_VALIDATION_GATES,
+        "final_state": LAYER5_OVERVIEW["final_state"],
+        "evolution": "Cognitive Intelligence System → A Living Synchronized Enterprise Intelligence Organism",
+        "next_layer": "Layer 6 — Autonomous Sovereign Operations",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
