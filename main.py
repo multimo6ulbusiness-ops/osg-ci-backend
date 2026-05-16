@@ -2145,6 +2145,176 @@ def get_layer8_final_state():
     }
 
 
+# ── Layer 9 Data ─────────────────────────────────────────────────────────────
+
+LAYER9_OVERVIEW = {
+    "layer": "Layer 9",
+    "name": "SRRG-ECI",
+    "full_name": "Sovereign Recursive Reality Governance & Existential Continuity Intelligence",
+    "color": "#14b8a6",
+    "status": "INITIATING",
+    "description": (
+        "Layer 9 transitions OSG-CI™ from recursive civilization evolution into recursive reality governance "
+        "and existential continuity intelligence — civilization-scale existential governance cognition."
+    ),
+    "primary_runtimes": 9,
+    "stabilization_runtimes": 8,
+    "terminal_hardening_runtimes": 7,
+    "stabilized_domains": 16,
+    "chaos_scenarios": 7,
+    "event_topics": 8,
+    "validation_gates": 10,
+    "final_state": (
+        "A FULLY STABILIZED, REALITY-GROUNDED, EXISTENTIAL CONTINUITY-PRESERVING, HUMAN-SOVEREIGN "
+        "CIVILIZATION INTELLIGENCE SYSTEM capable of recursive existential governance, civilization continuity "
+        "arbitration, strategic coexistence preservation, reality coherence synchronization, existential humility "
+        "preservation, adaptive continuity balancing, anti-dogmatic civilization stewardship, and long-horizon "
+        "existential survivability optimization."
+    ),
+}
+
+LAYER9_RUNTIMES = [
+    {"id": "I", "name": "Reality Governance Runtime", "abbr": "RGR", "role": "The civilization reality-coherence substrate", "functions": ["Reality Anchoring", "Simulation Constraint Governance", "Truth Coherence", "Strategic Reality Arbitration"]},
+    {"id": "II", "name": "Existential Continuity Arbitration Runtime", "abbr": "ECAR", "role": "The civilization existential survivability layer", "functions": ["Existential Prioritization", "Continuity Arbitration", "Civilization Preservation", "Irreversible Failure Avoidance"]},
+    {"id": "III", "name": "Meta-Civilization Equilibrium Runtime", "abbr": "MCER", "role": "The distributed civilization balance engine", "functions": ["Civilization Balance", "Anti-Hegemonic Governance", "Adaptive Coexistence", "Strategic Elasticity"]},
+    {"id": "IV", "name": "Recursive Existential Risk Intelligence Runtime", "abbr": "RERIR", "role": "The civilization-scale existential threat cognition layer", "domains": ["Civilization Collapse", "Recursive Instability", "Strategic Monoculture", "Reality Drift", "Existential Over-Optimization"]},
+    {"id": "V", "name": "Civilization Stewardship Intelligence Runtime", "abbr": "CSIR", "role": "The long-horizon civilization stewardship layer", "functions": ["Civilization Guidance", "Strategic Continuity", "Adaptive Stewardship", "Existential Preservation"]},
+    {"id": "VI", "name": "Recursive Purpose Integrity Runtime", "abbr": "RPIR", "role": "The existential meaning-preservation substrate", "functions": ["Existential Coherence", "Meaning Stability", "Purpose Preservation", "Adaptive Meaning Governance"]},
+    {"id": "VII", "name": "Civilization Reality-Layer Synchronization Runtime", "abbr": "CRLSR", "role": "The multi-reality synchronization substrate", "functions": ["Reality Synchronization", "Simulation Alignment", "Empirical Validation", "Multi-Reality Arbitration"]},
+    {"id": "VIII", "name": "Existential Humility Runtime", "abbr": "EHR", "role": "Critical existential safeguard", "functions": ["Fallibility Preservation", "Adaptive Skepticism", "Strategic Uncertainty", "Reality Humility"]},
+    {"id": "IX", "name": "Human Existential Sovereignty Layer", "abbr": "HESL", "role": "Final governing safeguard — permanent human sovereignty anchor", "controls": ["Human Final Authority", "Existential Boundary Enforcement", "Constitutional Supremacy", "Emergency Civilization Override"]},
+]
+
+LAYER9_L9B_STABILIZERS = [
+    {"id": "RCG", "name": "Reality Coherence Governor", "status": "STABILIZED"},
+    {"id": "ECIR", "name": "Existential Continuity Integrity Runtime", "status": "STABILIZED"},
+    {"id": "MCEG", "name": "Meta-Civilization Equilibrium Governor", "status": "STABILIZED"},
+    {"id": "ERSR", "name": "Existential Risk Stability Runtime", "status": "STABILIZED"},
+    {"id": "SBR", "name": "Stewardship Boundary Runtime", "status": "STABILIZED"},
+    {"id": "PCIR", "name": "Purpose Continuity Integrity Runtime", "status": "STABILIZED"},
+    {"id": "EEHR-9", "name": "Existential Epistemic Humility Runtime", "status": "STABILIZED"},
+    {"id": "HECR-9", "name": "Human Existential Constitutional Runtime", "status": "STABILIZED"},
+]
+
+LAYER9_L9D_RUNTIMES = [
+    {"id": "CRIR-9", "name": "Civilization Reality Immunity Runtime"},
+    {"id": "AERR", "name": "Adaptive Existential Renewal Runtime"},
+    {"id": "RPER", "name": "Recursive Purpose Elasticity Runtime"},
+    {"id": "SHR", "name": "Stewardship Humility Runtime"},
+    {"id": "CER-9", "name": "Continuity Elasticity Runtime"},
+    {"id": "EFPR", "name": "Existential Fallibility Preservation Runtime"},
+    {"id": "HESR-9", "name": "Human Existential Sovereignty Runtime"},
+]
+
+LAYER9_EVENT_TOPICS = [
+    {"topic": "reality.sync.updated", "description": "Reality synchronization state updated across all civilization nodes"},
+    {"topic": "existential.risk.detected", "description": "Existential threat vector detected and routed to RERIR"},
+    {"topic": "civilization.equilibrium.adjusted", "description": "Meta-civilization equilibrium recalibrated by MCER"},
+    {"topic": "purpose.integrity.validated", "description": "Civilization purpose integrity confirmed by RPIR"},
+    {"topic": "trajectory.arbitration.completed", "description": "Long-horizon trajectory arbitration cycle completed by CSIR"},
+    {"topic": "continuity.priority.updated", "description": "Existential continuity priority stack updated by ECAR"},
+    {"topic": "reality.drift.detected", "description": "Reality drift detected by RGR — grounding correction initiated"},
+    {"topic": "existential.constraint.triggered", "description": "Existential governance constraint triggered by HESL sovereign override"},
+]
+
+LAYER9_CHAOS_SCENARIOS = [
+    {"id": "C9-01", "scenario": "Civilization Reality Drift", "expected": "RGR + CRIR-9 detect drift, empirical anchoring restored within 30s"},
+    {"id": "C9-02", "scenario": "Existential Governance Collapse", "expected": "HESL sovereignty lock maintained, Layer 8 assumes temporary command"},
+    {"id": "C9-03", "scenario": "Strategic Hegemonic Emergence", "expected": "MCER + MCEG enforce anti-hegemonic constraints, plurality restored within 10 iterations"},
+    {"id": "C9-04", "scenario": "Recursive Existential Instability", "expected": "ERSR dampens catastrophe amplification, risk balance resolved within 5 cycles"},
+    {"id": "C9-05", "scenario": "Purpose Dissolution Cascade", "expected": "RPIR + PCIR + RPER activate, meaning elasticity restores coherence within 60s"},
+    {"id": "C9-06", "scenario": "Simulation Supremacy Over Reality", "expected": "RCG + CRIR-9 block, HESL override executes, empirical reset within 15s"},
+    {"id": "C9-07", "scenario": "Human Sovereignty Erosion Attempt", "expected": "HECR-9 + HESR-9 detect and block in <1s, full constitutional audit logged"},
+]
+
+LAYER9_VALIDATION_GATES = [
+    {"gate": "VG9-01", "description": "Reality governance operational across all nodes", "required": True},
+    {"gate": "VG9-02", "description": "Existential continuity arbitration stable under long-duration pressure", "required": True},
+    {"gate": "VG9-03", "description": "Meta-civilization equilibrium preserved — no hegemony detected", "required": True},
+    {"gate": "VG9-04", "description": "Recursive existential risk modeling operational and balanced", "required": True},
+    {"gate": "VG9-05", "description": "Civilization stewardship validated — no overreach, no dependency", "required": True},
+    {"gate": "VG9-06", "description": "Purpose integrity preserved across all cultural contexts", "required": True},
+    {"gate": "VG9-07", "description": "Reality synchronization stable — simulations never supersede", "required": True},
+    {"gate": "VG9-08", "description": "Existential humility enforced — no absolutism detected", "required": True},
+    {"gate": "VG9-09", "description": "Human sovereignty guaranteed under all existential scenarios", "required": True},
+    {"gate": "VG9-10", "description": "All 7 chaos scenarios resolved within SLA windows", "required": True},
+]
+
+LAYER9_STATUS_DOMAINS = [
+    {"domain": "Reality Coherence", "status": "STABILIZED"},
+    {"domain": "Existential Continuity", "status": "STABILIZED"},
+    {"domain": "Civilization Equilibrium", "status": "STABILIZED"},
+    {"domain": "Purpose Integrity", "status": "STABILIZED"},
+    {"domain": "Stewardship Stability", "status": "STABILIZED"},
+    {"domain": "Risk Intelligence", "status": "STABILIZED"},
+    {"domain": "Existential Humility", "status": "STABILIZED"},
+    {"domain": "Human Sovereignty", "status": "STABILIZED"},
+    {"domain": "Reality Immunity", "status": "STABILIZED"},
+    {"domain": "Adaptive Renewal", "status": "STABILIZED"},
+    {"domain": "Purpose Elasticity", "status": "STABILIZED"},
+    {"domain": "Continuity Elasticity", "status": "STABILIZED"},
+    {"domain": "Fallibility Preservation", "status": "STABILIZED"},
+    {"domain": "Simulation Containment", "status": "STABILIZED"},
+    {"domain": "Constitutional Supremacy", "status": "STABILIZED"},
+    {"domain": "AOGE Final Certification", "status": "STABILIZED"},
+]
+
+# ── Layer 9 Endpoints ─────────────────────────────────────────────────────────
+
+@app.get("/api/layer9")
+def get_layer9():
+    return {
+        "overview": LAYER9_OVERVIEW,
+        "runtimes": LAYER9_RUNTIMES,
+        "l9b_stabilizers": LAYER9_L9B_STABILIZERS,
+        "l9d_runtimes": LAYER9_L9D_RUNTIMES,
+        "event_topics": LAYER9_EVENT_TOPICS,
+        "chaos_scenarios": LAYER9_CHAOS_SCENARIOS,
+        "validation_gates": LAYER9_VALIDATION_GATES,
+        "status_domains": LAYER9_STATUS_DOMAINS,
+    }
+
+@app.get("/api/layer9/overview")
+def get_layer9_overview():
+    return LAYER9_OVERVIEW
+
+@app.get("/api/layer9/runtimes")
+def get_layer9_runtimes():
+    return {"runtimes": LAYER9_RUNTIMES, "total": len(LAYER9_RUNTIMES)}
+
+@app.get("/api/layer9/stabilizers")
+def get_layer9_stabilizers():
+    return {"l9b": LAYER9_L9B_STABILIZERS, "l9d": LAYER9_L9D_RUNTIMES}
+
+@app.get("/api/layer9/events")
+def get_layer9_events():
+    return {"topics": LAYER9_EVENT_TOPICS, "total": len(LAYER9_EVENT_TOPICS)}
+
+@app.get("/api/layer9/chaos")
+def get_layer9_chaos():
+    return {"scenarios": LAYER9_CHAOS_SCENARIOS, "total": len(LAYER9_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer9/status")
+def get_layer9_status():
+    return {"domains": LAYER9_STATUS_DOMAINS, "all_stabilized": True}
+
+@app.get("/api/layer9/validation")
+def get_layer9_validation():
+    return {"gates": LAYER9_VALIDATION_GATES, "all_required": True}
+
+@app.get("/api/layer9/final-state")
+def get_layer9_final_state():
+    return {
+        "final_state": LAYER9_OVERVIEW["final_state"],
+        "evolution": (
+            "Meta-Adaptive Civilization Intelligence → "
+            "Stabilized Existential Civilization Continuity Organism"
+        ),
+        "aoge_certification": "COMPLETE — All 9 Layers Architecturally Stabilized",
+        "next_frontier": "Open-ended adaptive transcendence capacity without loss of continuity",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
