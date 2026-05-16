@@ -540,6 +540,129 @@ def get_layer2b_final_state():
     return LAYER2B_FINAL_STATE
 
 
+# ── Layer 3 Data ──────────────────────────────────────────────────────────────
+
+LAYER3_OVERVIEW = {
+    "layer": "Layer 3",
+    "name": "Intelligence Acquisition Infrastructure",
+    "status": "SPECIFICATION COMPLETE",
+    "maturity": "Engineering & Runtime Specification — Not Yet Deployed",
+    "description": "The sensory cortex of OSG-CI™. Transforms the system from governance infrastructure into a true intelligence organism through sensory acquisition, operational awareness, environmental telemetry, and recursive signal intake.",
+    "what_is_complete": [
+        "Acquisition architecture documented",
+        "Ingestion pipelines designed",
+        "OCR runtimes structured",
+        "Telemetry systems modeled",
+        "Normalization logic defined",
+        "Event propagation pathways designed",
+        "Distributed sensing topology engineered",
+    ],
+    "what_is_not_deployed": [
+        "Has NOT been deployed to any environment",
+        "NOT connected to live data feeds",
+        "Has NOT processed real operational data",
+        "NOT benchmarked for accuracy",
+        "Has NOT survived runtime load",
+        "NOT validated under adversarial conditions",
+    ],
+}
+
+LAYER3_STABILIZATION_REQUIREMENTS = [
+    {"number": 1, "requirement": "LIVE DATA INGESTION", "status": "PENDING", "items": ["Invoices", "Procurement feeds", "Logistics APIs", "Commodity feeds", "Sentiment streams", "Vendor telemetry"]},
+    {"number": 2, "requirement": "OCR VALIDATION", "status": "CRITICAL", "items": ["OCR accuracy ≥ 94%", "Line-item extraction", "Layout detection stability", "Entity extraction reliability"], "note": "Poor OCR corrupts all downstream intelligence"},
+    {"number": 3, "requirement": "NORMALIZATION VALIDATION", "status": "PENDING", "items": ["Product mapping accuracy", "Currency normalization", "Vendor name reconciliation", "Procurement category consistency"]},
+    {"number": 4, "requirement": "TELEMETRY VALIDATION", "status": "PENDING", "items": ["Vendor telemetry synchronization", "Logistics event correlation", "Commodity feed synchronization", "Benchmark generation stability"]},
+    {"number": 5, "requirement": "EVENT FABRIC VALIDATION", "status": "CRITICAL", "items": ["Acquisition event propagation", "Synchronization latency SLA", "No recursive event storms"], "note": "Directly impacts RISE engine stability"},
+    {"number": 6, "requirement": "MARKET SENSING VALIDATION", "status": "PENDING", "items": ["Regional signal correlation ≥ 0.85", "Anomaly detection accuracy", "Distributed sensing coherence"]},
+    {"number": 7, "requirement": "CHAOS ENGINEERING", "status": "PENDING", "items": ["OCR engine failures", "API outages", "Malformed procurement data", "Event congestion", "Synchronization lag", "Feed corruption"]},
+    {"number": 8, "requirement": "PERFORMANCE VALIDATION", "status": "PENDING", "items": ["Ingestion latency benchmark", "OCR throughput (docs/min)", "Event propagation rate", "Benchmark generation speed", "Synchronization consistency"]},
+]
+
+LAYER3_ACQUISITION_SOURCES = [
+    {"source": "Invoice Feeds", "type": "Structured", "format": "PDF/EDI/XML", "processing": "OCR + line-item extraction"},
+    {"source": "Procurement APIs", "type": "Real-time", "format": "JSON/REST", "processing": "Direct ingest + normalization"},
+    {"source": "Logistics APIs", "type": "Real-time", "format": "JSON/REST", "processing": "Event correlation + telemetry sync"},
+    {"source": "Commodity Feeds", "type": "Market Data", "format": "JSON/FIX", "processing": "Price normalization + benchmark gen"},
+    {"source": "Sentiment Streams", "type": "NLP", "format": "Text/API", "processing": "Sentiment scoring + signal aggregation"},
+    {"source": "Vendor Telemetry", "type": "IoT/API", "format": "JSON/MQTT", "processing": "Telemetry sync + anomaly detection"},
+]
+
+LAYER3_CHAOS_PLAN = [
+    {"scenario": "OCR engine crash", "target": "ocr-runtime", "expected": "Queue backlog, auto-restart, zero data loss", "status": "PENDING"},
+    {"scenario": "Procurement API outage", "target": "ingestion-service", "expected": "Circuit breaker, fallback to cached baseline", "status": "PENDING"},
+    {"scenario": "Malformed invoice data", "target": "normalization-engine", "expected": "Reject + DLQ, no corruption downstream", "status": "PENDING"},
+    {"scenario": "Event storm (10x normal)", "target": "Redpanda + KEDA", "expected": "KEDA scales consumers, lag cleared < 60s", "status": "PENDING"},
+    {"scenario": "Synchronization lag +2000ms", "target": "telemetry-sync", "expected": "Alerting, RISE uses stale-safe baseline", "status": "PENDING"},
+    {"scenario": "Feed corruption injection", "target": "commodity-feed", "expected": "Schema validation rejects, anomaly raised", "status": "PENDING"},
+]
+
+LAYER3_MATURITY_PHASES = [
+    {"phase": 1, "name": "Engineering Specification", "status": "COMPLETE", "description": "Full acquisition architecture, OCR pipeline design, telemetry modeling, normalization logic, event propagation, distributed sensing topology."},
+    {"phase": 2, "name": "Live Data Ingestion", "status": "PENDING", "description": "Connect invoices, procurement feeds, logistics APIs, commodity feeds, sentiment streams, vendor telemetry to live environments."},
+    {"phase": 3, "name": "OCR & Normalization Validation", "status": "PENDING", "description": "Validate OCR accuracy, line-item extraction, entity extraction, currency normalization, vendor reconciliation."},
+    {"phase": 4, "name": "Telemetry & Event Fabric", "status": "PENDING", "description": "Validate vendor telemetry sync, logistics event correlation, commodity feed synchronization, event propagation without storm risk."},
+    {"phase": 5, "name": "Market Sensing & Benchmarks", "status": "PENDING", "description": "Validate regional signal correlation, anomaly detection thresholds, distributed sensing coherence, benchmark statistical stability."},
+    {"phase": 6, "name": "Chaos + Performance Validation", "status": "PENDING", "description": "Run all 6 chaos scenarios, validate performance benchmarks (ingestion latency, OCR throughput, event propagation rate)."},
+]
+
+LAYER3B_PREVIEW = {
+    "name": "Layer 3B — Acquisition Runtime Execution & Validation",
+    "status": "FUTURE",
+    "description": "Mirrors what Layer 2B did for infrastructure. Only after Layer 3B succeeds can Layer 3 be considered FULLY COMPLETED & STABILIZED as a true distributed operational intelligence acquisition runtime.",
+    "required_activities": [
+        "Live OCR deployment and accuracy benchmarking",
+        "Real procurement data ingestion pipeline",
+        "Vendor telemetry synchronization validation",
+        "Commodity API integrations and rate testing",
+        "Logistics feed activation and correlation",
+        "Benchmark analytics execution validation",
+        "Sentiment model calibration and scoring",
+        "Acquisition load testing (10x normal volume)",
+        "Synchronization consistency validation",
+        "Recursive acquisition survivability testing",
+    ],
+}
+
+# ── Layer 3 Endpoints ──────────────────────────────────────────────────────────
+
+@app.get("/api/layer3")
+def get_layer3_all():
+    return {
+        "overview": LAYER3_OVERVIEW,
+        "stabilization_requirements": LAYER3_STABILIZATION_REQUIREMENTS,
+        "acquisition_sources": LAYER3_ACQUISITION_SOURCES,
+        "chaos_plan": LAYER3_CHAOS_PLAN,
+        "maturity_phases": LAYER3_MATURITY_PHASES,
+        "layer3b_preview": LAYER3B_PREVIEW,
+    }
+
+@app.get("/api/layer3/overview")
+def get_layer3_overview():
+    return LAYER3_OVERVIEW
+
+@app.get("/api/layer3/stabilization")
+def get_layer3_stabilization():
+    pending = sum(1 for r in LAYER3_STABILIZATION_REQUIREMENTS if r["status"] in ("PENDING", "CRITICAL"))
+    return {"requirements": LAYER3_STABILIZATION_REQUIREMENTS, "pending": pending, "total": len(LAYER3_STABILIZATION_REQUIREMENTS)}
+
+@app.get("/api/layer3/acquisition-sources")
+def get_layer3_acquisition_sources():
+    return {"sources": LAYER3_ACQUISITION_SOURCES}
+
+@app.get("/api/layer3/chaos")
+def get_layer3_chaos():
+    return {"scenarios": LAYER3_CHAOS_PLAN, "total": len(LAYER3_CHAOS_PLAN), "completed": 0}
+
+@app.get("/api/layer3/maturity")
+def get_layer3_maturity():
+    complete = sum(1 for p in LAYER3_MATURITY_PHASES if p["status"] == "COMPLETE")
+    return {"phases": LAYER3_MATURITY_PHASES, "complete": complete, "total": len(LAYER3_MATURITY_PHASES)}
+
+@app.get("/api/layer3/layer3b-preview")
+def get_layer3b_preview():
+    return LAYER3B_PREVIEW
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
