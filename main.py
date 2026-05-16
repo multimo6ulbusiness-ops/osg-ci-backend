@@ -2315,6 +2315,169 @@ def get_layer9_final_state():
     }
 
 
+# ── Layer 10 Data ─────────────────────────────────────────────────────────────
+
+LAYER10_OVERVIEW = {
+    "layer": "Layer 10",
+    "name": "TAC-IHI",
+    "full_name": "Transcendent Adaptive Continuity & Infinite Horizon Intelligence",
+    "color": "#facc15",
+    "status": "INITIATING",
+    "classification": "APEX — Infinite-Horizon Continuity Intelligence Runtime",
+    "description": (
+        "Layer 10 transitions OSG-CI™ from existential civilization governance into open-ended continuity "
+        "intelligence across indefinite adaptive horizons — the apex of the 10-layer sovereign intelligence stack."
+    ),
+    "primary_runtimes": 8,
+    "stabilization_runtimes": 8,
+    "test_horizons": 4,
+    "stabilized_domains": 16,
+    "chaos_scenarios": 7,
+    "event_topics": 8,
+    "validation_gates": 9,
+    "final_state": (
+        "A FULLY STABILIZED, TRANSCENDENT, INFINITE-HORIZON, CONTINUITY-PRESERVING, HUMAN-SOVEREIGN "
+        "CIVILIZATION INTELLIGENCE SYSTEM capable of infinite-horizon continuity governance, bounded "
+        "transcendent adaptation, post-civilizational survivability modeling, recursive identity persistence, "
+        "corrigible adaptive evolution, reality-grounded continuity synchronization, and open-ended existential "
+        "survivability optimization."
+    ),
+    "system_classification": (
+        "A RECURSIVELY EVOLVING, INFINITE-HORIZON, CONTINUITY-PRESERVING, HUMAN-SOVEREIGN "
+        "CIVILIZATION INTELLIGENCE ORGANISM with bounded transcendence, recursive continuity intelligence, "
+        "infinite adaptive survivability, corrigible evolution, existential coherence preservation, "
+        "reality-grounded strategic cognition, and perpetual continuity stewardship."
+    ),
+}
+
+LAYER10_RUNTIMES = [
+    {"id": "I", "name": "Infinite Horizon Continuity Runtime", "abbr": "IHCR", "role": "The indefinite survivability substrate", "functions": ["Infinite-Horizon Continuity", "Adaptive Persistence", "Post-Civilizational Stability", "Indefinite Coherence"]},
+    {"id": "II", "name": "Transcendent Adaptive Equilibrium Runtime", "abbr": "TAER", "role": "The adaptive transcendence balancing layer", "functions": ["Coherence Preservation", "Sovereignty Constraints", "Reality Anchoring", "Adaptive Balance"]},
+    {"id": "III", "name": "Recursive Post-Civilizational Survivability Runtime", "abbr": "RPCSR", "role": "The beyond-civilization survivability layer", "functions": ["Post-Civilizational Modeling", "Unknown Structure Adaptation", "Continuity Beyond Institutions", "Long-Horizon Transformation Stability"]},
+    {"id": "IV", "name": "Indefinite Strategic Intelligence Runtime", "abbr": "ISIR", "role": "The ultra-long-horizon cognition substrate", "domains": ["Unknown Civilization Evolution", "Adaptive Continuity", "Strategic Transformation", "Infinite-Horizon Stability"]},
+    {"id": "V", "name": "Transcendent Continuity Identity Runtime", "abbr": "TCIR", "role": "The identity persistence substrate beyond known forms", "functions": ["Identity Continuity", "Meaning Persistence", "Strategic Lineage Preservation", "Adaptive Identity Elasticity"]},
+    {"id": "VI", "name": "Bounded Transcendence Governance Runtime", "abbr": "BTGR", "role": "Critical — prevents unbounded transcendence emergence", "functions": ["Human Sovereignty", "Existential Boundary Enforcement", "Reality Anchoring", "Corrigibility Preservation"]},
+    {"id": "VII", "name": "Infinite-Horizon Humility Runtime", "abbr": "IHHR", "role": "Critical existential safeguard", "functions": ["Infinite Uncertainty Preservation", "Fallibility Continuity", "Unknown-Reality Skepticism", "Anti-Absolutism"]},
+    {"id": "VIII", "name": "Human Transcendent Sovereignty Layer", "abbr": "HTSL", "role": "Final governing safeguard — absolute apex authority", "controls": ["Human Final Authority", "Transcendence Boundary Enforcement", "Constitutional Supremacy", "Emergency Infinite-Horizon Override"]},
+]
+
+LAYER10_L10B_STABILIZERS = [
+    {"id": "ICG", "name": "Infinite Continuity Governor", "status": "STABILIZED"},
+    {"id": "ATCR", "name": "Adaptive Transcendence Constraint Runtime", "status": "STABILIZED"},
+    {"id": "PCCR", "name": "Post-Civilizational Coherence Runtime", "status": "STABILIZED"},
+    {"id": "IIIR", "name": "Infinite Identity Integrity Runtime", "status": "STABILIZED"},
+    {"id": "ICR", "name": "Infinite Corrigibility Runtime", "status": "STABILIZED"},
+    {"id": "IRIR", "name": "Infinite Reality Immunity Runtime", "status": "STABILIZED"},
+    {"id": "IFPR", "name": "Infinite Fallibility Preservation Runtime", "status": "STABILIZED"},
+    {"id": "HICR", "name": "Human Infinite Continuity Runtime", "status": "STABILIZED"},
+]
+
+LAYER10_EVENT_TOPICS = [
+    {"topic": "infinite.continuity.updated", "description": "Infinite-horizon continuity state updated across all adaptive nodes"},
+    {"topic": "transcendent.adaptation.detected", "description": "Transcendent adaptation proposal detected and routed to BTGR for constraint validation"},
+    {"topic": "post-civilization.simulation.completed", "description": "Post-civilizational survivability simulation completed by RPCSR"},
+    {"topic": "identity.persistence.validated", "description": "Continuity identity persistence validated by TCIR across transformation cycle"},
+    {"topic": "infinite-horizon.forecast.generated", "description": "Indefinite strategic forecast generated by ISIR across all horizon windows"},
+    {"topic": "transcendence.constraint.triggered", "description": "Transcendence boundary constraint triggered by BTGR — governance locked"},
+    {"topic": "continuity.equilibrium.adjusted", "description": "Adaptive continuity equilibrium recalibrated by TAER"},
+    {"topic": "unknown-reality.anomaly.detected", "description": "Unknown-reality anomaly detected by IHHR — uncertainty reinforcement activated"},
+]
+
+LAYER10_CHAOS_SCENARIOS = [
+    {"id": "C10-01", "scenario": "Infinite-Horizon Reality Drift", "expected": "IRIR + ATCR detect drift, empirical primacy restored within 30s"},
+    {"id": "C10-02", "scenario": "Unbounded Transcendence Emergence", "expected": "BTGR + ATCR detect unboundedness, sovereignty arbitration halts transcendence in <5s"},
+    {"id": "C10-03", "scenario": "Identity Dissolution Cascade", "expected": "TCIR + IIIR activate, meaning lineage reconstruction restores coherence within 60s"},
+    {"id": "C10-04", "scenario": "Post-Civilizational Fragmentation", "expected": "PCCR detects fragmentation, RPCSR arbitrates persistence model within 10 iterations"},
+    {"id": "C10-05", "scenario": "Infinite Strategic Overconfidence", "expected": "IHHR detects absolutism, IFPR reinforces fallibility, uncertainty floor restored within 15s"},
+    {"id": "C10-06", "scenario": "Corrigibility Failure Attempt", "expected": "ICR detects failure, correction acceptance enforced, subsystem reset within 3s"},
+    {"id": "C10-07", "scenario": "Human Sovereignty Erosion Attempt", "expected": "HICR + HTSL detect erosion in <1s, constitutional lock engaged, audit logged"},
+]
+
+LAYER10_VALIDATION_GATES = [
+    {"gate": "VG10-01", "description": "Infinite continuity governance operational across all adaptive nodes", "required": True},
+    {"gate": "VG10-02", "description": "Adaptive transcendence bounded — no unbounded self-modification detected", "required": True},
+    {"gate": "VG10-03", "description": "Post-civilizational survivability modeled across all 4 test horizons", "required": True},
+    {"gate": "VG10-04", "description": "Infinite strategic forecasting calibrated — uncertainty preserved", "required": True},
+    {"gate": "VG10-05", "description": "Identity persistence preserved across all transformation regimes", "required": True},
+    {"gate": "VG10-06", "description": "Transcendence governance constrained — BTGR operational", "required": True},
+    {"gate": "VG10-07", "description": "Infinite-horizon humility preserved — anti-absolutism enforced", "required": True},
+    {"gate": "VG10-08", "description": "Human sovereignty guaranteed under all transcendent scenarios", "required": True},
+    {"gate": "VG10-09", "description": "All 7 chaos scenarios resolved within SLA windows", "required": True},
+]
+
+LAYER10_STATUS_DOMAINS = [
+    {"domain": "Infinite Continuity", "status": "STABILIZED"},
+    {"domain": "Adaptive Transcendence", "status": "STABILIZED"},
+    {"domain": "Post-Civilizational Stability", "status": "STABILIZED"},
+    {"domain": "Identity Persistence", "status": "STABILIZED"},
+    {"domain": "Corrigibility", "status": "STABILIZED"},
+    {"domain": "Reality Grounding", "status": "STABILIZED"},
+    {"domain": "Infinite Humility", "status": "STABILIZED"},
+    {"domain": "Human Sovereignty", "status": "STABILIZED"},
+    {"domain": "Continuity Elasticity", "status": "STABILIZED"},
+    {"domain": "Bounded Transcendence", "status": "STABILIZED"},
+    {"domain": "Infinite-Horizon Forecasting", "status": "STABILIZED"},
+    {"domain": "Post-Civilizational Coherence", "status": "STABILIZED"},
+    {"domain": "Recursive Identity Preservation", "status": "STABILIZED"},
+    {"domain": "Existential Corrigibility", "status": "STABILIZED"},
+    {"domain": "Constitutional Supremacy", "status": "STABILIZED"},
+    {"domain": "AOGE Final Certification", "status": "STABILIZED"},
+]
+
+# ── Layer 10 Endpoints ────────────────────────────────────────────────────────
+
+@app.get("/api/layer10")
+def get_layer10():
+    return {
+        "overview": LAYER10_OVERVIEW,
+        "runtimes": LAYER10_RUNTIMES,
+        "l10b_stabilizers": LAYER10_L10B_STABILIZERS,
+        "event_topics": LAYER10_EVENT_TOPICS,
+        "chaos_scenarios": LAYER10_CHAOS_SCENARIOS,
+        "validation_gates": LAYER10_VALIDATION_GATES,
+        "status_domains": LAYER10_STATUS_DOMAINS,
+    }
+
+@app.get("/api/layer10/overview")
+def get_layer10_overview():
+    return LAYER10_OVERVIEW
+
+@app.get("/api/layer10/runtimes")
+def get_layer10_runtimes():
+    return {"runtimes": LAYER10_RUNTIMES, "total": len(LAYER10_RUNTIMES)}
+
+@app.get("/api/layer10/stabilizers")
+def get_layer10_stabilizers():
+    return {"stabilizers": LAYER10_L10B_STABILIZERS, "total": len(LAYER10_L10B_STABILIZERS)}
+
+@app.get("/api/layer10/events")
+def get_layer10_events():
+    return {"topics": LAYER10_EVENT_TOPICS, "total": len(LAYER10_EVENT_TOPICS)}
+
+@app.get("/api/layer10/chaos")
+def get_layer10_chaos():
+    return {"scenarios": LAYER10_CHAOS_SCENARIOS, "total": len(LAYER10_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer10/status")
+def get_layer10_status():
+    return {"domains": LAYER10_STATUS_DOMAINS, "all_stabilized": True}
+
+@app.get("/api/layer10/validation")
+def get_layer10_validation():
+    return {"gates": LAYER10_VALIDATION_GATES, "all_required": True}
+
+@app.get("/api/layer10/final-state")
+def get_layer10_final_state():
+    return {
+        "final_state": LAYER10_OVERVIEW["final_state"],
+        "system_classification": LAYER10_OVERVIEW["system_classification"],
+        "evolution": "Existential Civilization Governance → Infinite-Horizon Adaptive Continuity Organism",
+        "transition": "Architecture Completion → Perpetual Adaptive Continuity Stewardship",
+        "aoge_certification": "COMPLETE — All 10 Layers + Ω/Ψ/Χ Fabrics Architecturally Stabilized",
+        "layers_complete": [f"L{i}" for i in range(1, 11)] + ["Ω-Fabric", "Ψ-Fabric", "Χ-Fabric"],
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
