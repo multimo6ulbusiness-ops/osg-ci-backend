@@ -663,6 +663,213 @@ def get_layer3b_preview():
     return LAYER3B_PREVIEW
 
 
+# ── Layer 3B Data ─────────────────────────────────────────────────────────────
+
+LAYER3B_OVERVIEW = {
+    "layer": "Layer 3B",
+    "name": "Acquisition Runtime Execution & Validation",
+    "status": "INITIATING",
+    "description": "Operationalizes the entire intelligence acquisition fabric. OSG-CI™ begins actively sensing procurement activity, vendor behavior, logistics movement, commodity volatility, and distributed operational sentiment.",
+    "sections": 12,
+    "primary_objective": ["Live intelligence acquisition", "OCR runtimes", "Procurement telemetry", "Vendor synchronization", "Logistics ingestion", "Commodity aggregation", "Sentiment analysis", "Recursive acquisition survivability"],
+}
+
+LAYER3B_OCR_STACK = [
+    {"function": "OCR Engine", "technology": "Tesseract 5"},
+    {"function": "Advanced OCR", "technology": "PaddleOCR"},
+    {"function": "Layout Detection", "technology": "LayoutParser"},
+    {"function": "NLP Extraction", "technology": "spaCy"},
+    {"function": "Semantic Classification", "technology": "Transformers"},
+    {"function": "Queue Runtime", "technology": "Redpanda"},
+]
+
+LAYER3B_OCR_VALIDATION = [
+    {"metric": "OCR Accuracy", "target": "> 95%"},
+    {"metric": "Line Item Accuracy", "target": "> 92%"},
+    {"metric": "Layout Detection", "target": "Stable across all doc types"},
+    {"metric": "Queue Throughput", "target": "Stable at 10k+ docs/hr"},
+    {"metric": "Extraction Latency", "target": "< 5 seconds per document"},
+]
+
+LAYER3B_INGESTION_SOURCES = [
+    {"source": "PDFs", "purpose": "Invoice ingestion"},
+    {"source": "CSV / XLSX", "purpose": "Procurement exports"},
+    {"source": "APIs", "purpose": "Procurement feeds"},
+    {"source": "Email Intake", "purpose": "Invoice acquisition"},
+    {"source": "EDI", "purpose": "Institutional procurement"},
+]
+
+LAYER3B_EVENT_TOPICS = ["invoice.ingested", "ocr.completed", "procurement.normalized", "benchmark.updated", "vendor.telemetry.updated"]
+
+LAYER3B_VENDOR_TELEMETRY_TARGETS = [
+    {"metric": "Sync Latency", "target": "< 2 seconds"},
+    {"metric": "Replication Integrity", "target": "100%"},
+    {"metric": "Anomaly Detection Accuracy", "target": "> 90%"},
+]
+
+LAYER3B_COMMODITY_SOURCES = [
+    {"source": "USDA APIs", "function": "Agriculture intelligence"},
+    {"source": "NOAA APIs", "function": "Weather correlation"},
+    {"source": "CME Feeds", "function": "Futures pricing"},
+    {"source": "ICE Feeds", "function": "Commodities"},
+    {"source": "Fuel APIs", "function": "Transport economics"},
+]
+
+LAYER3B_COMMODITY_INTERVALS = [
+    {"feed": "Commodity Prices", "interval": "1–5 min"},
+    {"feed": "Weather", "interval": "15 min"},
+    {"feed": "Fuel Prices", "interval": "Hourly"},
+    {"feed": "Logistics Economics", "interval": "Hourly"},
+]
+
+LAYER3B_LOGISTICS_SOURCES = [
+    {"source": "Freight APIs", "purpose": "Transit intelligence"},
+    {"source": "GPS Telemetry", "purpose": "Movement tracking"},
+    {"source": "Shipping APIs", "purpose": "Shipment status"},
+    {"source": "Weather Correlation", "purpose": "Disruption analysis"},
+]
+
+LAYER3B_LOGISTICS_TOPICS = ["shipment.delayed", "shipment.arrived", "weather.disruption", "fuel.spike", "route.anomaly"]
+
+LAYER3B_LOGISTICS_TARGETS = [
+    {"metric": "Telemetry Latency", "target": "< 3 seconds"},
+    {"metric": "Event Accuracy", "target": "> 95%"},
+    {"metric": "Delay Correlation", "target": "Stable"},
+]
+
+LAYER3B_SENTIMENT_STACK = [
+    {"function": "NLP Runtime", "technology": "Transformers"},
+    {"function": "Sentiment Models", "technology": "HuggingFace"},
+    {"function": "Correlation", "technology": "Neo4j"},
+    {"function": "Storage", "technology": "PostgreSQL"},
+]
+
+LAYER3B_SENTIMENT_TARGETS = [
+    {"metric": "Sentiment Accuracy", "target": "> 90%"},
+    {"metric": "False Positive Rate", "target": "Low"},
+    {"metric": "Correlation Stability", "target": "Stable"},
+]
+
+LAYER3B_LOAD_TEST_STACK = [
+    {"function": "Load Testing", "technology": "k6"},
+    {"function": "Event Pressure", "technology": "Kafka producers"},
+    {"function": "Runtime Metrics", "technology": "Prometheus"},
+]
+
+LAYER3B_PERFORMANCE_TARGETS = [
+    {"metric": "OCR Throughput", "target": "10,000+ docs/hr"},
+    {"metric": "Event Throughput", "target": "Stable"},
+    {"metric": "Queue Latency", "target": "< 1 second"},
+    {"metric": "Sync Delay", "target": "< 2 seconds"},
+]
+
+LAYER3B_CHAOS_SCENARIOS = [
+    {"scenario": "OCR worker failure", "purpose": "Ingestion resilience"},
+    {"scenario": "Commodity feed outage", "purpose": "Fallback validation"},
+    {"scenario": "Logistics API outage", "purpose": "Survivability"},
+    {"scenario": "Event bus congestion", "purpose": "Synchronization resilience"},
+    {"scenario": "Procurement flood", "purpose": "Runtime elasticity"},
+    {"scenario": "Recursive event storm", "purpose": "Containment validation"},
+]
+
+LAYER3B_OBSERVABILITY_METRICS = [
+    {"metric": "OCR latency", "purpose": "Ingestion pipeline visibility"},
+    {"metric": "Queue depth", "purpose": "Event pressure monitoring"},
+    {"metric": "Vendor anomaly rate", "purpose": "Supplier intelligence signal"},
+    {"metric": "Commodity volatility", "purpose": "Macroeconomic sensing"},
+    {"metric": "Logistics delays", "purpose": "Operational pressure indicator"},
+    {"metric": "Sentiment spikes", "purpose": "Disruption intelligence"},
+    {"metric": "Federation lag", "purpose": "Synchronization stability"},
+]
+
+LAYER3B_FINAL_GATES = [
+    {"validation": "OCR deployment operational", "required": True},
+    {"validation": "Procurement ingestion operational", "required": True},
+    {"validation": "Vendor telemetry synchronized", "required": True},
+    {"validation": "Commodity APIs stable", "required": True},
+    {"validation": "Logistics ingestion active", "required": True},
+    {"validation": "Benchmark analytics operational", "required": True},
+    {"validation": "Sentiment calibration validated", "required": True},
+    {"validation": "Load testing passed", "required": True},
+    {"validation": "Synchronization stable", "required": True},
+    {"validation": "Chaos survivability passed", "required": True},
+]
+
+LAYER3B_FINAL_STATE = {
+    "declaration": "A LIVE DISTRIBUTED COMMERCIAL INTELLIGENCE ACQUISITION NETWORK",
+    "capabilities": [
+        "Continuously sensing procurement ecosystems",
+        "Ingesting operational telemetry at scale",
+        "Synchronizing market intelligence in real-time",
+        "Tracking vendor behavior and anomalies",
+        "Monitoring logistics disruption signals",
+        "Correlating commodity volatility",
+        "Recursively propagating operational awareness",
+    ],
+    "system_evolution": "Infrastructure + Sensing Architecture → A LIVING OPERATIONAL INTELLIGENCE ACQUISITION ORGANISM",
+    "next_layer": "Layer 4 — Operational Services Mesh",
+}
+
+# ── Layer 3B Endpoints ─────────────────────────────────────────────────────────
+
+@app.get("/api/layer3b")
+def get_layer3b_all():
+    return {
+        "overview": LAYER3B_OVERVIEW,
+        "ocr_stack": LAYER3B_OCR_STACK,
+        "ocr_validation": LAYER3B_OCR_VALIDATION,
+        "ingestion_sources": LAYER3B_INGESTION_SOURCES,
+        "event_topics": LAYER3B_EVENT_TOPICS,
+        "vendor_telemetry_targets": LAYER3B_VENDOR_TELEMETRY_TARGETS,
+        "commodity_sources": LAYER3B_COMMODITY_SOURCES,
+        "commodity_intervals": LAYER3B_COMMODITY_INTERVALS,
+        "logistics_sources": LAYER3B_LOGISTICS_SOURCES,
+        "logistics_topics": LAYER3B_LOGISTICS_TOPICS,
+        "sentiment_stack": LAYER3B_SENTIMENT_STACK,
+        "performance_targets": LAYER3B_PERFORMANCE_TARGETS,
+        "chaos_scenarios": LAYER3B_CHAOS_SCENARIOS,
+        "observability_metrics": LAYER3B_OBSERVABILITY_METRICS,
+        "final_gates": LAYER3B_FINAL_GATES,
+        "final_state": LAYER3B_FINAL_STATE,
+    }
+
+@app.get("/api/layer3b/overview")
+def get_layer3b_overview():
+    return LAYER3B_OVERVIEW
+
+@app.get("/api/layer3b/ocr")
+def get_layer3b_ocr():
+    return {"stack": LAYER3B_OCR_STACK, "validation": LAYER3B_OCR_VALIDATION}
+
+@app.get("/api/layer3b/procurement")
+def get_layer3b_procurement():
+    return {"sources": LAYER3B_INGESTION_SOURCES, "event_topics": LAYER3B_EVENT_TOPICS}
+
+@app.get("/api/layer3b/telemetry")
+def get_layer3b_telemetry():
+    return {"targets": LAYER3B_VENDOR_TELEMETRY_TARGETS, "commodity_sources": LAYER3B_COMMODITY_SOURCES, "intervals": LAYER3B_COMMODITY_INTERVALS}
+
+@app.get("/api/layer3b/logistics")
+def get_layer3b_logistics():
+    return {"sources": LAYER3B_LOGISTICS_SOURCES, "topics": LAYER3B_LOGISTICS_TOPICS, "targets": LAYER3B_LOGISTICS_TARGETS}
+
+@app.get("/api/layer3b/sentiment")
+def get_layer3b_sentiment():
+    return {"stack": LAYER3B_SENTIMENT_STACK, "targets": LAYER3B_SENTIMENT_TARGETS}
+
+@app.get("/api/layer3b/chaos")
+def get_layer3b_chaos():
+    return {"scenarios": LAYER3B_CHAOS_SCENARIOS, "total": len(LAYER3B_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer3b/observability")
+def get_layer3b_observability():
+    return {"metrics": LAYER3B_OBSERVABILITY_METRICS}
+
+@app.get("/api/layer3b/final-state")
+def get_layer3b_final_state():
+    return {"gates": LAYER3B_FINAL_GATES, "final_state": LAYER3B_FINAL_STATE}
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
