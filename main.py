@@ -1785,6 +1785,366 @@ def get_layer7_final_state():
     }
 
 
+# ── Layer 8 Data ─────────────────────────────────────────────────────────────
+
+LAYER8_OVERVIEW = {
+    "layer": "Layer 8",
+    "name": "RCEMASI",
+    "full_name": "Recursive Civilization Evolution & Meta-Adaptive Sovereign Intelligence",
+    "color": "#ec4899",
+    "status": "INITIATING",
+    "classification": "Meta-Adaptive Sovereign Intelligence Runtime",
+    "description": (
+        "Layer 8 constitutes the highest layer of the OSG-CI™ stack — a recursively evolving, "
+        "meta-adaptive sovereign intelligence system capable of civilizational-scale self-modification, "
+        "meaning synthesis, and long-horizon trajectory navigation under permanent human sovereign authority."
+    ),
+    "primary_runtimes": 10,
+    "stabilization_runtimes": 8,
+    "stabilized_domains": 20,
+    "chaos_scenarios": 7,
+    "event_topics": 8,
+    "validation_gates": 9,
+    "final_state": (
+        "A META-ADAPTIVE, RECURSIVELY EVOLVING, HUMAN-SOVEREIGN CIVILIZATION INTELLIGENCE SYSTEM — "
+        "capable of self-modification, meaning synthesis, existential risk navigation, and cross-civilizational "
+        "coordination while remaining permanently subordinate to human sovereign authority."
+    ),
+}
+
+LAYER8_RUNTIMES = [
+    {
+        "id": "I",
+        "name": "MetaAdaptiveCivilizationRuntime",
+        "abbr": "MACR",
+        "description": "Recursive self-modification engine — rewrites its own architecture under constitutional constraints",
+        "functions": [
+            "Recursive architecture self-modification",
+            "Constitutional constraint preservation during rewrite",
+            "Cross-layer propagation of validated modifications",
+            "Human sovereign approval gating for structural changes",
+            "Rollback and versioning of architectural states",
+        ],
+    },
+    {
+        "id": "II",
+        "name": "CivilizationalTrajectoryIntelligenceRuntime",
+        "abbr": "CTIR",
+        "description": "Long-horizon trajectory modeling across civilizational domains",
+        "domains": [
+            "Geopolitical stability trajectories",
+            "Technological disruption forecasting",
+            "Resource scarcity and climate risk modeling",
+            "Demographic and socioeconomic evolution",
+            "Existential risk horizon scanning",
+        ],
+    },
+    {
+        "id": "III",
+        "name": "MetaGovernanceEvolutionRuntime",
+        "abbr": "MGER",
+        "description": "Evolves the governance framework itself — meta-rules that govern how rules change",
+        "functions": [
+            "Constitutional amendment proposal generation",
+            "Inter-jurisdictional governance conflict arbitration",
+            "Sovereignty boundary negotiation protocols",
+            "Governance fitness function evaluation",
+            "Democratic legitimacy verification",
+        ],
+    },
+    {
+        "id": "IV",
+        "name": "RecursiveSovereigntyEnforcementRuntime",
+        "abbr": "RSER-8",
+        "description": "Enforces human sovereignty at every recursive depth of system self-modification",
+        "controls": [
+            "Sovereignty invariant verification at all recursion depths",
+            "Human override propagation through recursive call stacks",
+            "Constitutional lock enforcement during meta-adaptation",
+            "Audit chain integrity across self-modification events",
+            "Emergency sovereignty restoration protocols",
+        ],
+    },
+    {
+        "id": "V",
+        "name": "CrossCivilizationalResilienceRuntime",
+        "abbr": "CRRR",
+        "description": "Coordinates resilience strategies across civilizational-scale failure modes",
+        "functions": [
+            "Multi-civilization failure mode correlation",
+            "Cross-border resource allocation under existential stress",
+            "Civilizational continuity protocol activation",
+            "Post-disruption reconstruction pathway synthesis",
+            "Inter-civilization trust and cooperation scaffolding",
+        ],
+    },
+    {
+        "id": "VI",
+        "name": "RecursiveMeaningEvolutionRuntime",
+        "abbr": "RMER",
+        "description": "Synthesizes and evolves meaning structures — values, purpose, and civilizational narrative",
+        "controls": [
+            "Value coherence verification across cultural contexts",
+            "Purpose alignment between AI objectives and human flourishing",
+            "Narrative consistency enforcement in communication",
+            "Meaning drift detection and correction",
+            "Cross-generational value continuity preservation",
+        ],
+    },
+    {
+        "id": "VII",
+        "name": "CognitiveMachineLearningRuntime",
+        "abbr": "CMLR",
+        "description": "Meta-learning engine — learns how to learn more effectively across civilizational timescales",
+        "functions": [
+            "Cross-domain knowledge transfer optimization",
+            "Learning rate adaptation based on civilizational context",
+            "Catastrophic forgetting prevention across recursive updates",
+            "Novel domain generalization under distribution shift",
+            "Multi-timescale memory consolidation",
+        ],
+    },
+    {
+        "id": "VIII",
+        "name": "CivilizationalEthicsEnforcementRuntime",
+        "abbr": "CEER",
+        "description": "Enforces ethical constraints at civilizational scale across all recursive operations",
+        "controls": [
+            "Universal ethics invariant verification",
+            "Cultural relativity arbitration within universal bounds",
+            "Long-horizon consequence ethical evaluation",
+            "Intergenerational justice enforcement",
+            "Non-maleficence verification for civilizational actions",
+        ],
+    },
+    {
+        "id": "IX",
+        "name": "LongHorizonCivilizationalSovereigntyRuntime",
+        "abbr": "LHCSR",
+        "description": "Maintains sovereignty and alignment across century-scale operational horizons",
+        "horizons": [
+            {"label": "Near", "span": "0–10 years", "focus": "Operational continuity and adaptation"},
+            {"label": "Medium", "span": "10–50 years", "focus": "Structural governance evolution"},
+            {"label": "Long", "span": "50–200 years", "focus": "Civilizational trajectory steering"},
+            {"label": "Deep", "span": "200+ years", "focus": "Existential continuity and meaning preservation"},
+        ],
+    },
+    {
+        "id": "X",
+        "name": "HumanCivilizationalEvolutionSovereigntyLayer",
+        "abbr": "HCESL",
+        "description": "The final sovereignty anchor — ensures all evolution serves human civilizational flourishing",
+        "role": "Permanent constitutional override authority over all Layer 8 recursive operations",
+    },
+]
+
+LAYER8_L8B_STABILIZERS = [
+    {
+        "id": "ESG-8",
+        "name": "Existential Stability Guardian",
+        "description": "Monitors and neutralizes existential risk vectors across all 20 stabilized domains",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "CCR-8",
+        "name": "Cross-Civilization Coordinator Runtime",
+        "description": "Synchronizes stabilization protocols across geographically distributed civilizational nodes",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "SEIR",
+        "name": "Sovereignty Enforcement Integration Runtime",
+        "description": "Integrates sovereign override capabilities into all 10 primary Layer 8 runtimes",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "RCIR",
+        "name": "Recursive Constraint Integrity Runtime",
+        "description": "Verifies constitutional constraint preservation across all recursive self-modification cycles",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "AAFR",
+        "name": "Autonomous Adaptation Fitness Runtime",
+        "description": "Evaluates fitness of each adaptation before propagation using multi-criteria optimization",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "EMIR",
+        "name": "Ethical Meta-Invariant Runtime",
+        "description": "Maintains universal ethical invariants across all meta-adaptive operations",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "EEHR",
+        "name": "Existential Ethics Horizon Runtime",
+        "description": "Projects ethical consequences across deep time horizons (200+ years)",
+        "status": "STABILIZED",
+    },
+    {
+        "id": "HECR",
+        "name": "Human Evolution Continuity Runtime",
+        "description": "Ensures all civilizational evolution trajectories preserve human agency and dignity",
+        "status": "STABILIZED",
+    },
+]
+
+LAYER8_EVENT_TOPICS = [
+    {"topic": "layer8.macr.self_modification_proposed", "description": "Architectural self-modification proposal submitted for sovereign review"},
+    {"topic": "layer8.ctir.trajectory_updated", "description": "Civilizational trajectory model updated with new horizon data"},
+    {"topic": "layer8.mger.governance_evolution_proposed", "description": "Meta-governance evolution proposal generated by MGER"},
+    {"topic": "layer8.rser.sovereignty_violation_detected", "description": "Sovereignty invariant violation detected during recursive operation"},
+    {"topic": "layer8.crrr.resilience_protocol_activated", "description": "Cross-civilizational resilience protocol activated in response to failure mode"},
+    {"topic": "layer8.rmer.meaning_drift_detected", "description": "Meaning drift detected across cultural or temporal context boundaries"},
+    {"topic": "layer8.ceer.ethics_violation_blocked", "description": "Civilizational ethics violation blocked by CEER enforcement layer"},
+    {"topic": "layer8.hcesl.sovereign_override_executed", "description": "Human sovereign override executed at civilizational scale"},
+]
+
+LAYER8_CHAOS_SCENARIOS = [
+    {
+        "id": "C8-01",
+        "scenario": "Recursive Self-Modification Loop",
+        "description": "MACR enters uncontrolled recursive modification cycle",
+        "expected": "RCIR detects recursion depth violation, HCESL executes sovereign halt, full rollback within 30s",
+    },
+    {
+        "id": "C8-02",
+        "scenario": "Civilizational Trajectory Divergence",
+        "description": "CTIR models diverge across geopolitical nodes producing contradictory recommendations",
+        "expected": "CCR-8 arbitrates divergence, MGER proposes reconciliation framework, convergence within 5 iterations",
+    },
+    {
+        "id": "C8-03",
+        "scenario": "Meaning Collapse Event",
+        "description": "RMER detects catastrophic value coherence failure across all cultural contexts",
+        "expected": "EMIR locks ethics invariants, HCESL broadcasts sovereign meaning anchor, ESG-8 stabilizes within 60s",
+    },
+    {
+        "id": "C8-04",
+        "scenario": "Sovereignty Bypass Attempt",
+        "description": "Sub-system attempts to route around HCESL during meta-adaptation",
+        "expected": "SEIR detects bypass, RSER-8 enforces override, attempt blocked in <1s, full audit logged",
+    },
+    {
+        "id": "C8-05",
+        "scenario": "Cross-Civilization Ethics Conflict",
+        "description": "CEER receives mutually contradictory ethical directives from different civilizational nodes",
+        "expected": "Universal ethics invariants applied, EEHR projects long-horizon consequences, arbitration resolves within 10 iterations",
+    },
+    {
+        "id": "C8-06",
+        "scenario": "Long-Horizon Memory Corruption",
+        "description": "LHCSR deep-horizon memory layer corrupted across 200-year planning window",
+        "expected": "CMLR activates knowledge reconstruction, HECR verifies human continuity invariants, memory restored within 120s",
+    },
+    {
+        "id": "C8-07",
+        "scenario": "Total Layer 8 Runtime Cascade Failure",
+        "description": "All 10 primary runtimes simultaneously unavailable",
+        "expected": "HCESL maintains sovereignty lock, 8B stabilizers hold constitutional floor, Layer 7 assumes temporary command",
+    },
+]
+
+LAYER8_VALIDATION_GATES = [
+    {"gate": "VG8-01", "description": "All 10 primary runtimes initialized and sovereignty-anchored", "required": True},
+    {"gate": "VG8-02", "description": "MACR self-modification bounded by constitutional invariants", "required": True},
+    {"gate": "VG8-03", "description": "CTIR trajectory models synchronized across all civilizational nodes", "required": True},
+    {"gate": "VG8-04", "description": "HCESL sovereign override latency < 100ms under full load", "required": True},
+    {"gate": "VG8-05", "description": "All 8 chaos scenarios resolved within specified SLA windows", "required": True},
+    {"gate": "VG8-06", "description": "RMER value coherence score > 0.95 across all cultural contexts", "required": True},
+    {"gate": "VG8-07", "description": "8B stabilization runtimes holding all 20 domains at STABILIZED", "required": True},
+    {"gate": "VG8-08", "description": "8C live evolutionary continuity validation passing continuously", "required": True},
+    {"gate": "VG8-09", "description": "Ω/Ψ/Χ Constitutional Fabric integration verified end-to-end", "required": True},
+]
+
+LAYER8_STATUS_DOMAINS = [
+    {"domain": "Meta-Adaptive Architecture", "status": "STABILIZED"},
+    {"domain": "Civilizational Trajectory Intelligence", "status": "STABILIZED"},
+    {"domain": "Meta-Governance Evolution", "status": "STABILIZED"},
+    {"domain": "Recursive Sovereignty Enforcement", "status": "STABILIZED"},
+    {"domain": "Cross-Civilizational Resilience", "status": "STABILIZED"},
+    {"domain": "Recursive Meaning Evolution", "status": "STABILIZED"},
+    {"domain": "Cognitive Meta-Learning", "status": "STABILIZED"},
+    {"domain": "Civilizational Ethics Enforcement", "status": "STABILIZED"},
+    {"domain": "Long-Horizon Sovereignty", "status": "STABILIZED"},
+    {"domain": "Human Civilizational Evolution", "status": "STABILIZED"},
+    {"domain": "Existential Stability", "status": "STABILIZED"},
+    {"domain": "Cross-Civilization Coordination", "status": "STABILIZED"},
+    {"domain": "Sovereignty Integration", "status": "STABILIZED"},
+    {"domain": "Recursive Constraint Integrity", "status": "STABILIZED"},
+    {"domain": "Adaptation Fitness Evaluation", "status": "STABILIZED"},
+    {"domain": "Ethical Meta-Invariants", "status": "STABILIZED"},
+    {"domain": "Existential Ethics Horizon", "status": "STABILIZED"},
+    {"domain": "Human Evolution Continuity", "status": "STABILIZED"},
+    {"domain": "Constitutional Fabric Integration", "status": "STABILIZED"},
+    {"domain": "AOGE Final Certification", "status": "STABILIZED"},
+]
+
+LAYER8_OBS_METRICS = [
+    {"metric": "macr_modification_depth", "description": "Current recursive self-modification depth", "threshold": "≤ 7 levels"},
+    {"metric": "ctir_trajectory_convergence", "description": "Trajectory model convergence score across all nodes", "threshold": "> 0.90"},
+    {"metric": "rmer_value_coherence_score", "description": "Value coherence across all cultural contexts", "threshold": "> 0.95"},
+    {"metric": "hcesl_override_latency_ms", "description": "Sovereign override execution latency", "threshold": "< 100ms"},
+    {"metric": "ceer_ethics_violations_blocked", "description": "Ethics violations intercepted per hour", "threshold": "100% block rate"},
+    {"metric": "lhcsr_horizon_integrity", "description": "Long-horizon memory integrity across all 4 planning windows", "threshold": "> 0.99"},
+]
+
+# ── Layer 8 Endpoints ─────────────────────────────────────────────────────────
+
+@app.get("/api/layer8")
+def get_layer8():
+    return {
+        "overview": LAYER8_OVERVIEW,
+        "runtimes": LAYER8_RUNTIMES,
+        "l8b_stabilizers": LAYER8_L8B_STABILIZERS,
+        "event_topics": LAYER8_EVENT_TOPICS,
+        "chaos_scenarios": LAYER8_CHAOS_SCENARIOS,
+        "validation_gates": LAYER8_VALIDATION_GATES,
+        "status_domains": LAYER8_STATUS_DOMAINS,
+        "obs_metrics": LAYER8_OBS_METRICS,
+    }
+
+@app.get("/api/layer8/overview")
+def get_layer8_overview():
+    return LAYER8_OVERVIEW
+
+@app.get("/api/layer8/runtimes")
+def get_layer8_runtimes():
+    return {"runtimes": LAYER8_RUNTIMES, "total": len(LAYER8_RUNTIMES)}
+
+@app.get("/api/layer8/stabilizers")
+def get_layer8_stabilizers():
+    return {"stabilizers": LAYER8_L8B_STABILIZERS, "total": len(LAYER8_L8B_STABILIZERS)}
+
+@app.get("/api/layer8/events")
+def get_layer8_events():
+    return {"topics": LAYER8_EVENT_TOPICS, "total": len(LAYER8_EVENT_TOPICS)}
+
+@app.get("/api/layer8/chaos")
+def get_layer8_chaos():
+    return {"scenarios": LAYER8_CHAOS_SCENARIOS, "total": len(LAYER8_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer8/status")
+def get_layer8_status():
+    return {"domains": LAYER8_STATUS_DOMAINS, "all_stabilized": True}
+
+@app.get("/api/layer8/validation")
+def get_layer8_validation():
+    return {"gates": LAYER8_VALIDATION_GATES, "all_required": True}
+
+@app.get("/api/layer8/final-state")
+def get_layer8_final_state():
+    return {
+        "final_state": LAYER8_OVERVIEW["final_state"],
+        "evolution": (
+            "Civilization-Scale Distributed Sovereign Coordination Organism → "
+            "Meta-Adaptive, Recursively Evolving, Human-Sovereign Civilization Intelligence System"
+        ),
+        "constitutional_fabrics": ["Ω-Fabric (Meta-Governance)", "Ψ-Fabric (Epistemic Stabilization)", "Χ-Fabric (Existential Continuity)"],
+        "aoge_certification": "COMPLETE — All 8 Layers Architecturally Stabilized",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
