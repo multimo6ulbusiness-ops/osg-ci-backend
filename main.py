@@ -870,6 +870,252 @@ def get_layer3b_final_state():
     return {"gates": LAYER3B_FINAL_GATES, "final_state": LAYER3B_FINAL_STATE}
 
 
+# ── Layer 4 Data ──────────────────────────────────────────────────────────────
+
+LAYER4_OVERVIEW = {
+    "layer": "Layer 4",
+    "name": "Intelligence Processing & Causal Analysis (IPCA)",
+    "status": "INITIATING",
+    "role": "The cognitive cortex of OSG-CI™ — transforms sensing into reasoning, correlating, forecasting, and causality-aware intelligence.",
+    "sections": 13,
+    "constructs": ["Anomaly detection engines", "Causal inference runtimes", "Probabilistic reasoning systems", "Graph intelligence infrastructure", "Recursive reinforcement learning", "Operational intelligence synthesis", "Anticipatory economic modeling"],
+}
+
+LAYER4_ANOMALY_STACK = [
+    {"function": "Stream Processing", "technology": "Apache Flink"},
+    {"function": "ML Runtime", "technology": "PyTorch"},
+    {"function": "Feature Store", "technology": "Feast"},
+    {"function": "Event Correlation", "technology": "Redpanda"},
+    {"function": "Detection Runtime", "technology": "Python ML Services"},
+]
+
+LAYER4_ANOMALY_CATEGORIES = [
+    {"category": "Procurement", "examples": "Abnormal pricing"},
+    {"category": "Vendor", "examples": "Delivery collapse"},
+    {"category": "Logistics", "examples": "Route disruption"},
+    {"category": "Commodity", "examples": "Volatility spikes"},
+    {"category": "Federation", "examples": "Sync drift"},
+    {"category": "Intelligence", "examples": "Recursive instability"},
+]
+
+LAYER4_DETECTION_MODELS = [
+    {"model": "Isolation Forest", "purpose": "Outlier detection"},
+    {"model": "Autoencoders", "purpose": "Behavioral anomalies"},
+    {"model": "LSTM", "purpose": "Temporal anomalies"},
+    {"model": "Bayesian Detection", "purpose": "Probabilistic anomalies"},
+]
+
+LAYER4_CAUSAL_STACK = [
+    {"function": "Graph Runtime", "technology": "Neo4j"},
+    {"function": "Causal ML", "technology": "DoWhy"},
+    {"function": "Bayesian Runtime", "technology": "PyMC"},
+    {"function": "Correlation Engine", "technology": "Python"},
+    {"function": "Event Runtime", "technology": "Redpanda"},
+]
+
+LAYER4_CAUSAL_EXAMPLE = [
+    "Fuel Price Spike",
+    "Freight Cost Increase",
+    "Logistics Delay",
+    "Vendor Fulfillment Stress",
+    "Procurement Inflation",
+]
+
+LAYER4_PROBABILISTIC_STACK = [
+    {"function": "Bayesian Networks", "technology": "PyMC"},
+    {"function": "Probabilistic Graphs", "technology": "pgmpy"},
+    {"function": "Forecast Correlation", "technology": "Prophet"},
+    {"function": "Scenario Modeling", "technology": "NumPy / Pandas"},
+]
+
+LAYER4_PROBABILISTIC_OUTPUTS = [
+    {"output": "Risk Probability", "purpose": "Disruption likelihood score"},
+    {"output": "Forecast Confidence", "purpose": "Prediction integrity rating"},
+    {"output": "Supply Risk", "purpose": "Operational pressure index"},
+    {"output": "Economic Pressure", "purpose": "Institutional stress indicator"},
+]
+
+LAYER4_GRAPH_STACK = [
+    {"function": "Graph DB", "technology": "Neo4j"},
+    {"function": "Graph ML", "technology": "PyTorch Geometric"},
+    {"function": "Correlation Engine", "technology": "Graph Algorithms"},
+    {"function": "Visualization", "technology": "Bloom / Grafana"},
+]
+
+LAYER4_GRAPH_ANALYTICS = [
+    {"analysis": "Centrality", "purpose": "Dependency risk scoring"},
+    {"analysis": "Community Detection", "purpose": "Regional clustering"},
+    {"analysis": "Path Analysis", "purpose": "Disruption propagation"},
+    {"analysis": "Influence Scoring", "purpose": "Systemic pressure"},
+]
+
+LAYER4_RL_STACK = [
+    {"function": "RL Runtime", "technology": "Ray RLlib"},
+    {"function": "Distributed Training", "technology": "Ray"},
+    {"function": "Reward Modeling", "technology": "Python"},
+    {"function": "State Synchronization", "technology": "Redis"},
+]
+
+LAYER4_RL_OBJECTIVES = [
+    {"objective": "Procurement Efficiency", "goal": "Maximize"},
+    {"objective": "Forecast Accuracy", "goal": "Maximize"},
+    {"objective": "Logistics Stability", "goal": "Maximize"},
+    {"objective": "Risk Exposure", "goal": "Minimize"},
+    {"objective": "Operational Drift", "goal": "Minimize"},
+]
+
+LAYER4_SYNTHESIS_OUTPUTS = [
+    {"output": "Procurement Risk", "purpose": "Operational response triggers"},
+    {"output": "Vendor Instability", "purpose": "Supplier mitigation actions"},
+    {"output": "Logistics Forecast", "purpose": "Route optimization signals"},
+    {"output": "Inflation Pressure", "purpose": "Budget adaptation guidance"},
+    {"output": "Demand Shift", "purpose": "Procurement strategy updates"},
+]
+
+LAYER4_ECONOMIC_STACK = [
+    {"function": "Time-Series Forecasting", "technology": "Prophet"},
+    {"function": "Sequential Modeling", "technology": "LSTM"},
+    {"function": "Bayesian Forecasting", "technology": "PyMC"},
+    {"function": "Economic Correlation", "technology": "Neo4j"},
+    {"function": "Simulation", "technology": "NumPy"},
+]
+
+LAYER4_ECONOMIC_OUTPUTS = [
+    {"output": "Inflation Forecast", "purpose": "Procurement planning signal"},
+    {"output": "Fuel Risk", "purpose": "Logistics adaptation trigger"},
+    {"output": "Labor Pressure", "purpose": "Operational planning input"},
+    {"output": "Commodity Stress", "purpose": "Supply forecasting baseline"},
+    {"output": "Regional Instability", "purpose": "Strategic mitigation guidance"},
+]
+
+LAYER4_EVENT_TOPICS = [
+    "anomaly.detected",
+    "causal.link.inferred",
+    "forecast.generated",
+    "risk.escalated",
+    "economic.pressure.updated",
+    "vendor.instability.detected",
+    "recursive.learning.updated",
+]
+
+LAYER4_OBSERVABILITY_METRICS = [
+    {"metric": "Anomaly Accuracy", "purpose": "Detection quality monitoring"},
+    {"metric": "Forecast Confidence", "purpose": "Predictive integrity score"},
+    {"metric": "Causal Stability", "purpose": "Reasoning consistency validation"},
+    {"metric": "RL Reward Convergence", "purpose": "Adaptive stability tracking"},
+    {"metric": "Graph Propagation Latency", "purpose": "Synchronization visibility"},
+    {"metric": "Economic Drift", "purpose": "Model calibration indicator"},
+]
+
+LAYER4_CHAOS_SCENARIOS = [
+    {"scenario": "Event Storm", "purpose": "Synchronization resilience"},
+    {"scenario": "False Anomaly Flood", "purpose": "Detection stability"},
+    {"scenario": "Commodity Spike", "purpose": "Forecasting validation"},
+    {"scenario": "Federation Drift", "purpose": "Graph consistency"},
+    {"scenario": "RL Instability", "purpose": "Recursive containment"},
+    {"scenario": "Economic Shock", "purpose": "Probabilistic resilience"},
+]
+
+LAYER4_VALIDATION_GATES = [
+    {"validation": "Anomaly engines operational", "required": True},
+    {"validation": "Causal inference validated", "required": True},
+    {"validation": "Probabilistic reasoning stable", "required": True},
+    {"validation": "Graph intelligence synchronized", "required": True},
+    {"validation": "RL convergence stable", "required": True},
+    {"validation": "Intelligence synthesis operational", "required": True},
+    {"validation": "Economic modeling calibrated", "required": True},
+    {"validation": "Event synchronization stable", "required": True},
+    {"validation": "Chaos survivability passed", "required": True},
+]
+
+LAYER4_FINAL_STATE = {
+    "declaration": "A CAUSAL-AWARE RECURSIVE COMMERCIAL INTELLIGENCE SYSTEM",
+    "capabilities": [
+        "Detecting anomalies across all operational dimensions",
+        "Inferring causality from procurement and logistics signals",
+        "Reasoning probabilistically under uncertainty",
+        "Modeling operational relationships via graph intelligence",
+        "Recursively improving intelligence through RL",
+        "Synthesizing operational strategy from live data",
+        "Forecasting macroeconomic disruption in advance",
+    ],
+    "evolution": "Sensing Infrastructure → A REASONING & ANTICIPATORY INTELLIGENCE ORGANISM",
+    "next_layer": "Layer 5 — Recursive Synchronization & Simulation (RISE Core Runtime)",
+    "layer5_preview": ["Recursive synchronization engines", "Distributed intelligence propagation", "Simulation runtimes", "Adaptive operational modeling", "Strategic economic simulations", "Full nervous-system intelligence orchestration"],
+}
+
+# ── Layer 4 Endpoints ──────────────────────────────────────────────────────────
+
+@app.get("/api/layer4")
+def get_layer4_all():
+    return {
+        "overview": LAYER4_OVERVIEW,
+        "anomaly_stack": LAYER4_ANOMALY_STACK,
+        "anomaly_categories": LAYER4_ANOMALY_CATEGORIES,
+        "detection_models": LAYER4_DETECTION_MODELS,
+        "causal_stack": LAYER4_CAUSAL_STACK,
+        "causal_chain_example": LAYER4_CAUSAL_EXAMPLE,
+        "probabilistic_stack": LAYER4_PROBABILISTIC_STACK,
+        "probabilistic_outputs": LAYER4_PROBABILISTIC_OUTPUTS,
+        "graph_stack": LAYER4_GRAPH_STACK,
+        "graph_analytics": LAYER4_GRAPH_ANALYTICS,
+        "rl_stack": LAYER4_RL_STACK,
+        "rl_objectives": LAYER4_RL_OBJECTIVES,
+        "synthesis_outputs": LAYER4_SYNTHESIS_OUTPUTS,
+        "economic_stack": LAYER4_ECONOMIC_STACK,
+        "economic_outputs": LAYER4_ECONOMIC_OUTPUTS,
+        "event_topics": LAYER4_EVENT_TOPICS,
+        "observability_metrics": LAYER4_OBSERVABILITY_METRICS,
+        "chaos_scenarios": LAYER4_CHAOS_SCENARIOS,
+        "validation_gates": LAYER4_VALIDATION_GATES,
+        "final_state": LAYER4_FINAL_STATE,
+    }
+
+@app.get("/api/layer4/overview")
+def get_layer4_overview():
+    return LAYER4_OVERVIEW
+
+@app.get("/api/layer4/anomaly")
+def get_layer4_anomaly():
+    return {"stack": LAYER4_ANOMALY_STACK, "categories": LAYER4_ANOMALY_CATEGORIES, "models": LAYER4_DETECTION_MODELS}
+
+@app.get("/api/layer4/causal")
+def get_layer4_causal():
+    return {"stack": LAYER4_CAUSAL_STACK, "example_chain": LAYER4_CAUSAL_EXAMPLE}
+
+@app.get("/api/layer4/probabilistic")
+def get_layer4_probabilistic():
+    return {"stack": LAYER4_PROBABILISTIC_STACK, "outputs": LAYER4_PROBABILISTIC_OUTPUTS}
+
+@app.get("/api/layer4/graph")
+def get_layer4_graph():
+    return {"stack": LAYER4_GRAPH_STACK, "analytics": LAYER4_GRAPH_ANALYTICS}
+
+@app.get("/api/layer4/rl")
+def get_layer4_rl():
+    return {"stack": LAYER4_RL_STACK, "objectives": LAYER4_RL_OBJECTIVES}
+
+@app.get("/api/layer4/synthesis")
+def get_layer4_synthesis():
+    return {"outputs": LAYER4_SYNTHESIS_OUTPUTS}
+
+@app.get("/api/layer4/economic")
+def get_layer4_economic():
+    return {"stack": LAYER4_ECONOMIC_STACK, "outputs": LAYER4_ECONOMIC_OUTPUTS}
+
+@app.get("/api/layer4/events")
+def get_layer4_events():
+    return {"topics": LAYER4_EVENT_TOPICS, "total": len(LAYER4_EVENT_TOPICS)}
+
+@app.get("/api/layer4/chaos")
+def get_layer4_chaos():
+    return {"scenarios": LAYER4_CHAOS_SCENARIOS, "total": len(LAYER4_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer4/final-state")
+def get_layer4_final_state():
+    return {"gates": LAYER4_VALIDATION_GATES, "final_state": LAYER4_FINAL_STATE}
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
