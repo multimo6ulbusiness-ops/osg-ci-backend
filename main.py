@@ -1116,6 +1116,242 @@ def get_layer4_final_state():
     return {"gates": LAYER4_VALIDATION_GATES, "final_state": LAYER4_FINAL_STATE}
 
 
+# ── Layer 4B Data ──────────────────────────────────────────────────────────────
+
+LAYER4B_OVERVIEW = {
+    "layer": "Layer 4B",
+    "name": "Cognitive Runtime Execution & Validation",
+    "subtitle": "Activates the Cognitive Intelligence Cortex of OSG-CI™",
+    "status": "EXECUTING",
+    "badge": "EXEC",
+    "color": "#818cf8",
+    "objective": "Deploy and validate live anomaly detection, causal inference calibration, graph synchronization, RL convergence, probabilistic reasoning, operational synthesis, economic forecasting, recursive cognition stress testing, and adaptive survivability.",
+    "final_state": "A LIVE RECURSIVE OPERATIONAL COGNITIVE INTELLIGENCE SYSTEM",
+}
+
+LAYER4B_ANOMALY_STACK = [
+    {"component": "Apache Flink", "role": "Real-time telemetry stream processing"},
+    {"component": "Feast Feature Store", "role": "Behavioral baseline feature extraction"},
+    {"component": "PyTorch Ensemble", "role": "4-model anomaly detection (Autoencoder + Isolation Forest + LSTM + VAE)"},
+    {"component": "Redpanda", "role": "anomaly.detected event emission"},
+    {"component": "FastAPI", "role": "RISE synchronization gateway"},
+]
+
+LAYER4B_ANOMALY_MODELS = [
+    {"model": "Autoencoder", "type": "Reconstruction Error", "target": ">93% accuracy"},
+    {"model": "Isolation Forest", "type": "Density Estimation", "target": "<2% false positive"},
+    {"model": "LSTM Sequence", "type": "Temporal Deviation", "target": "<150ms latency"},
+    {"model": "VAE", "type": "Latent Space Anomaly", "target": "<5% missed critical events"},
+]
+
+LAYER4B_CAUSAL_STACK = [
+    {"component": "Neo4j", "role": "Causal graph storage and traversal"},
+    {"component": "DoWhy", "role": "Causal graph construction and effect estimation"},
+    {"component": "PyMC", "role": "Bayesian causal inference modeling"},
+    {"component": "Redpanda", "role": "causal.link.inferred event emission"},
+]
+
+LAYER4B_CAUSAL_TARGETS = [
+    "Temporal causality precision ≥ 90%",
+    "Event propagation accuracy ≥ 88%",
+    "Operational dependency inference ≥ 85%",
+    "Economic relationship mapping ≥ 82%",
+    "Procurement pressure chain detection ≥ 87%",
+]
+
+LAYER4B_GRAPH_STACK = [
+    {"component": "Neo4j", "role": "Primary graph database — vendor/commodity/logistics/procurement nodes"},
+    {"component": "PyTorch Geometric", "role": "GNN training for relational pattern inference"},
+    {"component": "Redis", "role": "Graph delta cache for real-time synchronization"},
+    {"component": "Redpanda", "role": "Graph update event streaming"},
+]
+
+LAYER4B_GRAPH_TARGETS = [
+    "Vendor-commodity relationship sync ≥ 95%",
+    "Logistics route propagation latency < 200ms",
+    "Procurement cluster coherence ≥ 92%",
+    "Regional economy node accuracy ≥ 88%",
+    "Graph consistency under concurrent updates ≥ 99%",
+]
+
+LAYER4B_RL_STACK = [
+    {"component": "Ray RLlib", "role": "Distributed RL training — PPO policy optimization"},
+    {"component": "Redis", "role": "Replay buffer and experience storage"},
+    {"component": "Redpanda", "role": "rl.policy.updated event emission"},
+    {"component": "FastAPI", "role": "Policy query and action dispatch gateway"},
+]
+
+LAYER4B_RL_OBJECTIVES = [
+    "Maximize forecast accuracy improvement per episode",
+    "Maximize logistics route efficiency score",
+    "Maximize procurement outcome quality",
+    "Minimize anomaly response latency",
+    "Minimize strategy drift from governance constraints",
+]
+
+LAYER4B_RL_TARGETS = [
+    "Policy convergence within 500 episodes",
+    "Reward variance < 0.05 after convergence",
+    "Governance constraint violations = 0",
+    "Adaptive re-training trigger < 30s on drift detection",
+]
+
+LAYER4B_PROBABILISTIC_TARGETS = [
+    "Confidence interval calibration error < 3%",
+    "Scenario probability assignment accuracy ≥ 90%",
+    "Uncertainty quantification coverage ≥ 95%",
+    "Forecast confidence drift < 2% per 24h window",
+    "Bayesian update latency < 100ms per observation",
+]
+
+LAYER4B_SYNTHESIS_TARGETS = [
+    "Cross-domain correlation accuracy ≥ 88%",
+    "Operational synthesis latency < 500ms",
+    "Strategic recommendation precision ≥ 85%",
+    "Intelligence synthesis throughput ≥ 1,000 events/sec",
+]
+
+LAYER4B_ECONOMIC_STACK = [
+    {"component": "Prophet", "role": "Inflation + commodity trend forecasting"},
+    {"component": "LSTM", "role": "Fuel economics + labor pressure sequence modeling"},
+    {"component": "PyMC", "role": "Bayesian scenario simulation and uncertainty quantification"},
+    {"component": "Neo4j", "role": "Regional instability relationship mapping"},
+    {"component": "NumPy / SciPy", "role": "Procurement stress index computation"},
+]
+
+LAYER4B_ECONOMIC_TARGETS = [
+    "Inflation forecast accuracy ≥ 87%",
+    "Commodity volatility prediction ≥ 85%",
+    "Labor pressure index calibration ≥ 82%",
+    "Fuel economics model MAE < 4%",
+    "Regional instability detection ≥ 88%",
+]
+
+LAYER4B_STRESS_SCENARIOS = [
+    {"scenario": "Recursive Propagation Storm", "description": "Inject 100k synthetic events into causal graph simultaneously and verify bounded propagation depth"},
+    {"scenario": "Anomaly Cascade", "description": "Trigger correlated multi-domain anomalies and validate detection isolation prevents false positives"},
+    {"scenario": "Synchronization Overload", "description": "Overwhelm graph sync layer with concurrent updates and verify Redis delta cache holds coherence"},
+    {"scenario": "Probabilistic Divergence", "description": "Inject contradictory signals into Bayesian model and verify confidence intervals remain valid"},
+    {"scenario": "RL Instability", "description": "Force policy gradient explosion via reward manipulation and verify governor constraints engage"},
+    {"scenario": "Economic Shock Wave", "description": "Simulate simultaneous commodity crash + labor spike + fuel surge and verify forecast pipeline stabilizes"},
+]
+
+LAYER4B_CHAOS_SCENARIOS = [
+    {"scenario": "False Anomaly Flood", "description": "Inject 10,000 false positives per second — verify ensemble suppression holds precision ≥ 93%"},
+    {"scenario": "RL Divergence Attack", "description": "Force reward signal corruption — verify PPO policy governor engages within 3 episodes"},
+    {"scenario": "Graph Corruption", "description": "Corrupt 20% of Neo4j nodes — verify GNN consistency recovery < 60s"},
+    {"scenario": "Event Storm", "description": "Inject 500k Redpanda events simultaneously — verify backpressure and zero message loss"},
+    {"scenario": "Economic Shock", "description": "Simulate simultaneous 3-sigma shock on all 5 economic signals — verify forecast pipeline survives"},
+    {"scenario": "Federation Partition", "description": "Isolate RISE sync layer — verify local cognition continues operating in degraded mode"},
+]
+
+LAYER4B_SURVIVABILITY_OBJECTIVES = [
+    "Cognition remains bounded under recursive stress",
+    "Recursive intelligence stabilizes within 30s of shock",
+    "Graph propagation remains coherent under partition",
+    "RL adaptation remains constrained by governance",
+    "Governance integrity persists through all chaos scenarios",
+]
+
+LAYER4B_EVENT_TOPICS = [
+    {"topic": "anomaly.detected", "producer": "Anomaly Detection Engine", "consumer": "RISE / Causal Engine"},
+    {"topic": "causal.link.inferred", "producer": "Causal Inference Runtime", "consumer": "Graph Sync / Synthesis"},
+    {"topic": "forecast.generated", "producer": "Economic Forecast Engine", "consumer": "RISE / Operational Synthesis"},
+    {"topic": "risk.escalated", "producer": "Risk Classification Layer", "consumer": "RISE / Governance"},
+    {"topic": "rl.policy.updated", "producer": "Ray RLlib Agent", "consumer": "Procurement / Logistics Optimizer"},
+    {"topic": "economic.pressure.updated", "producer": "Economic Model Stack", "consumer": "Synthesis / Forecast"},
+    {"topic": "recursive.stress.detected", "producer": "Stress Testing Runtime", "consumer": "Survivability Monitor"},
+]
+
+LAYER4B_OBSERVABILITY_METRICS = [
+    {"metric": "anomaly_detection_precision", "target": ">93%", "source": "Prometheus / Flink metrics"},
+    {"metric": "causal_inference_stability", "target": ">90%", "source": "DoWhy confidence logs"},
+    {"metric": "rl_policy_convergence", "target": "<500 episodes", "source": "Ray RLlib dashboard"},
+    {"metric": "graph_propagation_latency", "target": "<200ms", "source": "Neo4j + Redis metrics"},
+    {"metric": "forecast_confidence_drift", "target": "<2%/24h", "source": "Prophet + PyMC outputs"},
+    {"metric": "recursive_amplification_factor", "target": "<1.5x", "source": "RISE synchronization logs"},
+]
+
+LAYER4B_VALIDATION_GATES = [
+    "Anomaly detection precision ≥ 93% on live telemetry",
+    "False positive rate < 2% across all detection models",
+    "Causal inference accuracy ≥ 90% on known event chains",
+    "Graph synchronization latency < 200ms under full load",
+    "RL policy convergence within 500 training episodes",
+    "Probabilistic forecast calibration error < 3%",
+    "Operational synthesis latency < 500ms end-to-end",
+    "Economic forecast MAE < 4% across all 5 signal types",
+    "Zero governance violations across all chaos scenarios",
+]
+
+# ── Layer 4B Endpoints ─────────────────────────────────────────────────────────
+
+@app.get("/api/layer4b")
+def get_layer4b():
+    return {
+        "overview": LAYER4B_OVERVIEW,
+        "event_topics": LAYER4B_EVENT_TOPICS,
+        "validation_gates": LAYER4B_VALIDATION_GATES,
+    }
+
+@app.get("/api/layer4b/overview")
+def get_layer4b_overview():
+    return LAYER4B_OVERVIEW
+
+@app.get("/api/layer4b/anomaly")
+def get_layer4b_anomaly():
+    return {"stack": LAYER4B_ANOMALY_STACK, "models": LAYER4B_ANOMALY_MODELS}
+
+@app.get("/api/layer4b/causal")
+def get_layer4b_causal():
+    return {"stack": LAYER4B_CAUSAL_STACK, "targets": LAYER4B_CAUSAL_TARGETS}
+
+@app.get("/api/layer4b/graph")
+def get_layer4b_graph():
+    return {"stack": LAYER4B_GRAPH_STACK, "targets": LAYER4B_GRAPH_TARGETS}
+
+@app.get("/api/layer4b/rl")
+def get_layer4b_rl():
+    return {"stack": LAYER4B_RL_STACK, "objectives": LAYER4B_RL_OBJECTIVES, "targets": LAYER4B_RL_TARGETS}
+
+@app.get("/api/layer4b/probabilistic")
+def get_layer4b_probabilistic():
+    return {"targets": LAYER4B_PROBABILISTIC_TARGETS}
+
+@app.get("/api/layer4b/synthesis")
+def get_layer4b_synthesis():
+    return {"targets": LAYER4B_SYNTHESIS_TARGETS}
+
+@app.get("/api/layer4b/economic")
+def get_layer4b_economic():
+    return {"stack": LAYER4B_ECONOMIC_STACK, "targets": LAYER4B_ECONOMIC_TARGETS}
+
+@app.get("/api/layer4b/stress")
+def get_layer4b_stress():
+    return {"scenarios": LAYER4B_STRESS_SCENARIOS, "total": len(LAYER4B_STRESS_SCENARIOS)}
+
+@app.get("/api/layer4b/chaos")
+def get_layer4b_chaos():
+    return {"scenarios": LAYER4B_CHAOS_SCENARIOS, "survivability_objectives": LAYER4B_SURVIVABILITY_OBJECTIVES}
+
+@app.get("/api/layer4b/events")
+def get_layer4b_events():
+    return {"topics": LAYER4B_EVENT_TOPICS, "total": len(LAYER4B_EVENT_TOPICS)}
+
+@app.get("/api/layer4b/observability")
+def get_layer4b_observability():
+    return {"metrics": LAYER4B_OBSERVABILITY_METRICS}
+
+@app.get("/api/layer4b/final-state")
+def get_layer4b_final_state():
+    return {
+        "gates": LAYER4B_VALIDATION_GATES,
+        "final_state": LAYER4B_OVERVIEW["final_state"],
+        "evolution": "Intelligence Acquisition Organism → A FULLY ADAPTIVE ENTERPRISE COGNITION SYSTEM",
+        "next_layer": "Layer 5 — RISE (Recursive Intelligence Synthesis Engine)",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
