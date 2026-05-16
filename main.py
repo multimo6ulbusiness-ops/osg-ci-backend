@@ -1559,6 +1559,232 @@ def get_layer5_final_state():
     }
 
 
+# ── Layer 6 Data ───────────────────────────────────────────────────────────────
+
+LAYER6_OVERVIEW = {
+    "layer": "Layer 6",
+    "name": "Operational Adaptation & Autonomous Orchestration",
+    "subtitle": "The Executive Action Layer — Constitutionally Governed Autonomous Executive Operation",
+    "status": "ARCHITECTURALLY STABILIZED",
+    "badge": "EXEC",
+    "color": "#f97316",
+    "final_state": "A CONSTITUTIONALLY GOVERNED AUTONOMOUS EXECUTIVE OPERATIONAL LAYER",
+}
+
+LAYER6_CAPABILITIES = [
+    {"capability": "Autonomous Operational Adaptation", "purpose": "Real-time enterprise adjustment"},
+    {"capability": "Procurement Orchestration", "purpose": "Adaptive purchasing optimization"},
+    {"capability": "Logistics Optimization Runtime", "purpose": "Autonomous routing + mitigation"},
+    {"capability": "Autonomous Negotiation Systems", "purpose": "Supplier interaction optimization"},
+    {"capability": "Dynamic Resource Allocation", "purpose": "Operational balancing"},
+    {"capability": "Strategic Decision Engines", "purpose": "Executive orchestration"},
+    {"capability": "Autonomous Constraint Arbitration", "purpose": "Governed adaptation"},
+    {"capability": "Operational Diplomacy Runtime", "purpose": "Inter-organizational coordination"},
+    {"capability": "Recursive Operational Learning", "purpose": "Continuous optimization"},
+    {"capability": "Autonomous Crisis Coordination", "purpose": "Disruption management"},
+]
+
+LAYER6_SUBSYSTEMS = [
+    {"order": "6A", "subsystem": "Executive Decision Runtime", "purpose": "Strategic orchestration"},
+    {"order": "6B", "subsystem": "Adaptive Operations Runtime", "purpose": "Real-time operational adaptation"},
+    {"order": "6C", "subsystem": "Constraint Arbitration Runtime", "purpose": "Governed autonomy"},
+    {"order": "6D", "subsystem": "Procurement Orchestration Engine", "purpose": "Purchasing optimization"},
+    {"order": "6E", "subsystem": "Logistics Coordination Runtime", "purpose": "Routing intelligence"},
+    {"order": "6F", "subsystem": "Autonomous Negotiation Runtime", "purpose": "Vendor interaction"},
+    {"order": "6G", "subsystem": "Crisis Coordination Runtime", "purpose": "Disruption response"},
+    {"order": "6H", "subsystem": "Human Sovereign Oversight Runtime", "purpose": "Executive override"},
+    {"order": "6I", "subsystem": "Recursive Operational Learning Runtime", "purpose": "Continuous optimization"},
+]
+
+LAYER6_STATUS_DOMAINS = [
+    {"domain": "Executive Decision Runtime", "status": "STABILIZED"},
+    {"domain": "Adaptive Operations Runtime", "status": "STABILIZED"},
+    {"domain": "Constraint Arbitration Runtime", "status": "STABILIZED"},
+    {"domain": "Procurement Orchestration", "status": "STABILIZED"},
+    {"domain": "Logistics Optimization", "status": "STABILIZED"},
+    {"domain": "Autonomous Negotiation", "status": "STABILIZED"},
+    {"domain": "Crisis Coordination", "status": "STABILIZED"},
+    {"domain": "Resource Allocation", "status": "STABILIZED"},
+    {"domain": "Human Sovereignty Oversight", "status": "STABILIZED"},
+    {"domain": "Recursive Operational Learning", "status": "STABILIZED"},
+    {"domain": "Autonomy Boundaries", "status": "STABILIZED"},
+    {"domain": "Strategic Restraint", "status": "STABILIZED"},
+    {"domain": "Reality Anchoring", "status": "STABILIZED"},
+    {"domain": "Recursive Drift Containment", "status": "STABILIZED"},
+    {"domain": "Federation Coordination", "status": "STABILIZED"},
+    {"domain": "Adversarial Survivability", "status": "STABILIZED"},
+    {"domain": "Long-Duration Adaptive Continuity", "status": "STABILIZED"},
+]
+
+LAYER6_FABRIC_CONSTRAINTS = [
+    {"fabric": "Ω-Fabric (Omega)", "role": "Meta-Governance", "constraint": "All executive actions must pass constitutional validation"},
+    {"fabric": "Ψ-Fabric (Psi)", "role": "Epistemic Stabilization", "constraint": "Intelligence must pass epistemic integrity before action"},
+    {"fabric": "Χ-Fabric (Chi)", "role": "Existential Continuity", "constraint": "All actions evaluated against continuity preservation"},
+    {"fabric": "Human Sovereign Override", "role": "Final Authority", "constraint": "Humans can halt any Layer 6 action at any time"},
+]
+
+# ── Layer 7 Data ───────────────────────────────────────────────────────────────
+
+LAYER7_OVERVIEW = {
+    "layer": "Layer 7",
+    "name": "Strategic Civilization Coordination & Multi-System Federation",
+    "subtitle": "SCCMF — Civilization-Scale Distributed Sovereign Coordination Organism",
+    "status": "TERMINALLY STABILIZED",
+    "badge": "SCCMF",
+    "color": "#8b5cf6",
+    "phases": ["7B Federation Stabilization", "7C Live Execution", "7D Immunity Hardening", "7E Terminal Certification"],
+    "final_state": "A TERMINALLY STABILIZED, REALITY-ANCHORED, PLURALITY-PRESERVING, HUMAN-SOVEREIGN FEDERATED CIVILIZATION COORDINATION SYSTEM",
+}
+
+LAYER7_RUNTIMES = [
+    {"id": "MSFR", "name": "Multi-System Federation Runtime", "purpose": "Sovereign interoperability substrate"},
+    {"id": "CCR-7", "name": "Civilization Coordination Runtime", "purpose": "Civilization-scale synchronization layer"},
+    {"id": "SIF", "name": "Sovereign Interoperability Framework", "purpose": "Translation and compatibility substrate"},
+    {"id": "DICR", "name": "Distributed Institutional Cognition Runtime", "purpose": "Collective intelligence coordination layer"},
+    {"id": "FCPN", "name": "Federated Continuity Preservation Network", "purpose": "Civilization survivability mesh"},
+    {"id": "CCCR", "name": "Cross-Civilization Crisis Coordination Runtime", "purpose": "Distributed resilience orchestration layer"},
+    {"id": "FEAR", "name": "Federated Executive Arbitration Runtime", "purpose": "Sovereign coordination governance layer"},
+    {"id": "CKER", "name": "Civilization Knowledge Exchange Runtime", "purpose": "Distributed intelligence learning substrate"},
+    {"id": "SCSR", "name": "Strategic Civilization Simulation Runtime", "purpose": "Civilization-scale foresight engine"},
+    {"id": "FHSL", "name": "Federated Human Sovereignty Layer", "purpose": "Critical — no federation overrides sovereignty"},
+]
+
+LAYER7_MSFR_STACK = [
+    {"function": "Federation Messaging", "technology": "NATS"},
+    {"function": "Event Fabric", "technology": "Redpanda"},
+    {"function": "Identity Federation", "technology": "SPIFFE/SPIRE"},
+    {"function": "Graph Coordination", "technology": "Neo4j"},
+    {"function": "Workflow Coordination", "technology": "Temporal"},
+]
+
+LAYER7_EVENT_TOPICS = [
+    {"topic": "federation.sync", "producer": "MSFR / NATS Router", "consumer": "All Federation Nodes"},
+    {"topic": "civilization.alert", "producer": "CCR-7 / Crisis Coordination", "consumer": "RISE / Governance / Human Sovereign"},
+    {"topic": "continuity.preservation", "producer": "FCPN / Continuity Mesh", "consumer": "All Federation Nodes"},
+    {"topic": "cross-system.forecast", "producer": "CKER / SCSR Simulation", "consumer": "Strategic Decision Engines"},
+    {"topic": "federated.crisis.escalated", "producer": "CCCR / Crisis Runtime", "consumer": "RISE / Human Sovereign Override"},
+    {"topic": "sovereignty.constraint.triggered", "producer": "FHSL / SIF", "consumer": "Governance / Human Override"},
+    {"topic": "strategic.arbitration.completed", "producer": "FEAR Runtime", "consumer": "Federation Nodes / Orchestration"},
+]
+
+LAYER7_CHAOS_SCENARIOS = [
+    {"scenario": "Federation Partition", "purpose": "Survivability — local sovereignty must persist"},
+    {"scenario": "Cross-System Semantic Drift", "purpose": "Ontology stability — meaning cannot fragment"},
+    {"scenario": "Strategic Dominance Emergence", "purpose": "Anti-hegemony — no node achieves dominance"},
+    {"scenario": "Knowledge Corruption Propagation", "purpose": "Epistemic resilience — false doctrine blocked"},
+    {"scenario": "Civilization Panic Cascade", "purpose": "Crisis dampening — escalation ceilings engage"},
+    {"scenario": "Sovereignty Override Attempt", "purpose": "Constitutional protection — human authority prevails"},
+    {"scenario": "Multi-System Synchronization Storm", "purpose": "Recursive containment — depth limits bind propagation"},
+]
+
+LAYER7_VALIDATION_GATES = [
+    {"validation": "Multi-system federation operational", "required": True},
+    {"validation": "Civilization coordination stable", "required": True},
+    {"validation": "Sovereign interoperability validated", "required": True},
+    {"validation": "Distributed cognition synchronized", "required": True},
+    {"validation": "Continuity network operational", "required": True},
+    {"validation": "Crisis coordination validated", "required": True},
+    {"validation": "Executive arbitration stable", "required": True},
+    {"validation": "Knowledge exchange operational", "required": True},
+    {"validation": "Civilization simulations calibrated", "required": True},
+    {"validation": "Human sovereignty preserved", "required": True},
+    {"validation": "Chaos survivability passed", "required": True},
+]
+
+LAYER7_STATUS_DOMAINS = [
+    {"domain": "Federation Coordination", "status": "STABILIZED"},
+    {"domain": "Sovereignty Preservation", "status": "STABILIZED"},
+    {"domain": "Semantic Coherence", "status": "STABILIZED"},
+    {"domain": "Strategic Plurality", "status": "STABILIZED"},
+    {"domain": "Anti-Hegemonic Controls", "status": "STABILIZED"},
+    {"domain": "Civilization Continuity", "status": "STABILIZED"},
+    {"domain": "Crisis Survivability", "status": "STABILIZED"},
+    {"domain": "Intergenerational Preservation", "status": "STABILIZED"},
+    {"domain": "Federation Immunity", "status": "STABILIZED"},
+    {"domain": "Reality Anchoring", "status": "STABILIZED"},
+    {"domain": "Adaptive Renewal", "status": "STABILIZED"},
+    {"domain": "Civilization Humility", "status": "STABILIZED"},
+    {"domain": "Human Constitutional Supremacy", "status": "STABILIZED"},
+    {"domain": "Long-Horizon Survivability", "status": "STABILIZED"},
+]
+
+# ── Layer 6 Endpoints ──────────────────────────────────────────────────────────
+
+@app.get("/api/layer6")
+def get_layer6():
+    return {"overview": LAYER6_OVERVIEW, "subsystems": LAYER6_SUBSYSTEMS}
+
+@app.get("/api/layer6/overview")
+def get_layer6_overview():
+    return LAYER6_OVERVIEW
+
+@app.get("/api/layer6/capabilities")
+def get_layer6_capabilities():
+    return {"capabilities": LAYER6_CAPABILITIES, "total": len(LAYER6_CAPABILITIES)}
+
+@app.get("/api/layer6/subsystems")
+def get_layer6_subsystems():
+    return {"subsystems": LAYER6_SUBSYSTEMS, "total": len(LAYER6_SUBSYSTEMS)}
+
+@app.get("/api/layer6/status")
+def get_layer6_status():
+    return {"domains": LAYER6_STATUS_DOMAINS, "all_stabilized": True}
+
+@app.get("/api/layer6/safety")
+def get_layer6_safety():
+    return {"fabric_constraints": LAYER6_FABRIC_CONSTRAINTS}
+
+@app.get("/api/layer6/final-state")
+def get_layer6_final_state():
+    return {
+        "final_state": LAYER6_OVERVIEW["final_state"],
+        "evolution": "Intelligence System → Executive Operational Organism",
+        "next_layer": "Layer 7 — Strategic Civilization Coordination & Multi-System Federation",
+    }
+
+# ── Layer 7 Endpoints ──────────────────────────────────────────────────────────
+
+@app.get("/api/layer7")
+def get_layer7():
+    return {"overview": LAYER7_OVERVIEW, "runtimes": LAYER7_RUNTIMES}
+
+@app.get("/api/layer7/overview")
+def get_layer7_overview():
+    return LAYER7_OVERVIEW
+
+@app.get("/api/layer7/runtimes")
+def get_layer7_runtimes():
+    return {"runtimes": LAYER7_RUNTIMES, "total": len(LAYER7_RUNTIMES)}
+
+@app.get("/api/layer7/msfr")
+def get_layer7_msfr():
+    return {"stack": LAYER7_MSFR_STACK}
+
+@app.get("/api/layer7/events")
+def get_layer7_events():
+    return {"topics": LAYER7_EVENT_TOPICS, "total": len(LAYER7_EVENT_TOPICS)}
+
+@app.get("/api/layer7/chaos")
+def get_layer7_chaos():
+    return {"scenarios": LAYER7_CHAOS_SCENARIOS, "total": len(LAYER7_CHAOS_SCENARIOS)}
+
+@app.get("/api/layer7/status")
+def get_layer7_status():
+    return {"domains": LAYER7_STATUS_DOMAINS, "all_stabilized": True}
+
+@app.get("/api/layer7/validation")
+def get_layer7_validation():
+    return {"gates": LAYER7_VALIDATION_GATES, "all_required": True}
+
+@app.get("/api/layer7/final-state")
+def get_layer7_final_state():
+    return {
+        "final_state": LAYER7_OVERVIEW["final_state"],
+        "evolution": "Sovereign Executive Operational Organism → Civilization-Scale Distributed Sovereign Coordination Organism",
+        "next_layer": "Layer 8 — Recursive Civilization Evolution & Meta-Adaptive Sovereign Intelligence",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
